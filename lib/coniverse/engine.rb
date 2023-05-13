@@ -1,3 +1,4 @@
+require 'draper'
 require 'slim'
 
 module Coniverse
@@ -6,6 +7,7 @@ module Coniverse
 
 		config.generators do
 			_1.test_framework = :rspec
+			_1.helper         = false
 		end
 	end
 end
