@@ -28,4 +28,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'slim-rails'
   spec.add_dependency 'draper'
   spec.add_dependency 'active_model-inherited_partials'
+
+  # Controllers
+  spec.add_dependency 'inherited_resources'
 end

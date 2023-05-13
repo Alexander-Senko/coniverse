@@ -1,4 +1,5 @@
 require 'draper'
+require 'inherited_resources'
 require 'slim'
 require 'active_model/inherited_partials'
 
