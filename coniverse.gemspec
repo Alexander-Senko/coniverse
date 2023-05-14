@@ -27,4 +27,5 @@ Gem::Specification.new do |spec|
   # Views
   spec.add_dependency 'slim-rails'
   spec.add_dependency 'draper'
+  spec.add_dependency 'active_model-inherited_partials'
 end

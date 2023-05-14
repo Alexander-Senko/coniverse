@@ -1,5 +1,6 @@
 require 'draper'
 require 'slim'
+require 'active_model/inherited_partials'
 
 module Coniverse
 	class Engine < ::Rails::Engine
