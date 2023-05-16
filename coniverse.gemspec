@@ -24,6 +24,9 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency 'rails', '~> 7.1'
 
+  # Models
+  spec.add_dependency 'adjustable_schema', '~> 0.8'
+
   # Views
   spec.add_dependency 'slim-rails'
   spec.add_dependency 'draper'
