@@ -1,3 +1,4 @@
+require 'adjustable_schema'
 require 'draper'
 require 'inherited_resources'
 require 'slim'
