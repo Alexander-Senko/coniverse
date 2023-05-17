@@ -73,6 +73,19 @@ ActiveRecord::Schema[7.1].define(version: 2024_04_04_135030) do
     t.index ["target_type", "target_id"], name: "index_adjustable_schema_relationships_on_target"
   end
 
+  create_table "coniverse_messages", id: :uuid, default: -> { "gen_random_uuid()" }, force: :cascade do |t|
+    t.string "type"
+    t.string "lang"
+    t.string "url"
+    t.text "body"
+    t.jsonb "metadata", default: {}
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["lang"], name: "index_coniverse_messages_on_lang"
+    t.index ["type"], name: "index_coniverse_messages_on_type"
+    t.index ["url"], name: "index_messages_on_url"
+  end
+
   create_table "dummy_models", id: :uuid, default: -> { "gen_random_uuid()" }, force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

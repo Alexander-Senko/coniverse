@@ -3,5 +3,8 @@
 module Coniverse
 	# Setup model relationships
 	AdjustableSchema::Relationship.module_eval do
+		# Messages
+		seed! Message, roles: %i[
+		]
 	end
 end
