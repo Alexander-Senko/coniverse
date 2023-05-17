@@ -9,6 +9,8 @@ module Coniverse
 			has_rich_text     :body
 			has_many_attached :media
 
+			def to_s = body.body.to_html
+
 			def text = body.to_plain_text
 		end
 	end
