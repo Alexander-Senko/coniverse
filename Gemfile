@@ -12,6 +12,7 @@ gem "sprockets-rails"
 
 group :test do
 	gem 'rspec-rails'
+	gem 'rspec-dom-testing', require: false
 end
 
 # Start debugger with binding.b [https://github.com/ruby/debug]
