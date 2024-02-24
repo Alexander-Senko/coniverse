@@ -1,4 +1,5 @@
 require 'adjustable_schema'
+require 'rails_model_load_hook'
 require 'magic/presenter'
 require 'inherited_resources'
 require 'slim'
