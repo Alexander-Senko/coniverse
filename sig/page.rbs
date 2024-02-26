@@ -1,0 +1,28 @@
+class Page
+	@params:  ActionController::Parameters
+	@records: Array[ActiveRecord::Base]
+
+	def initialize: (ActionController::Parameters | Hash[(:size | :before | :after), Integer]) -> void
+
+	def of: (ActiveRecord::Relation | Enumerable[ActiveRecord::Base]) -> Array[ActiveRecord::Base]
+
+	def size: -> Integer?
+
+	def full?:  -> bool
+	def inner?: -> bool
+	def last?:  -> bool
+
+	def looking_backward?: -> bool
+	def looking_forward?:  -> bool
+
+	def next:      -> Page
+	def next?:     -> bool
+	def previous:  -> Page
+	def previous?: -> bool
+
+	def turn: (before: ActiveRecord::Base) -> Page
+			|     (after:  ActiveRecord::Base) -> Page
+
+	def settings:         -> hash[(:size), untyped]
+	def rendering_method: -> (:append | :prepend)
+end

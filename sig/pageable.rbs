@@ -1,0 +1,5 @@
+module Pageable : InheritedResources::BaseHelpers
+	extend ActiveSupport::Concern
+
+	def page: -> Page?
+end
