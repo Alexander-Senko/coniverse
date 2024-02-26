@@ -1,0 +1,5 @@
+= render 'paginator/previous' if page&.previous?
+
+= render collection
+
+= render 'paginator/next'     if page&.next?

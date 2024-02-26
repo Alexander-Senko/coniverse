@@ -1,0 +1,5 @@
+= turbo_stream.remove :load_previous if page.looking_backward?
+= turbo_stream.remove :load_next     if page.looking_forward?
+
+= turbo_stream.send page.rendering_method, resource_collection_name do
+	= render 'collection'
