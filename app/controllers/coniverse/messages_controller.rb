@@ -1,6 +1,10 @@
 module Coniverse
 	class MessagesController < ApplicationController
+		prepend Pageable
+
 		belongs_to :message, optional: true
+
+		page.size = 20
 
 		def show
 			return redirect_to [ parent, anchor: resource.id ] if
