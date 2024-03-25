@@ -1,5 +1,7 @@
 require 'rails_helper'
 
+require 'requests/pageable'
+
 module Coniverse
 	$namespace = Engine.engine_name
 
@@ -15,6 +17,8 @@ module Coniverse
 
 		let(:parent)  { model_class.create }
 		let(:parents) { [ *parent, model_class.create ] }
+
+		it_behaves_like 'pageable resource'
 
 		describe 'create' do
 			let(:fields)  { %i[ body lang title ] }
