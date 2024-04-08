@@ -16,5 +16,12 @@ module Coniverse
 					timestamps:       false,
 					primary_key_type: :uuid
 		end
+
+		class << self
+			def local_method? method
+				(method.source_location or return)[0]
+						.starts_with? root.to_s
+			end
+		end
 	end
 end
