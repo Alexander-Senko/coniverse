@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_02_04_202626) do
+ActiveRecord::Schema[7.1].define(version: 2024_04_04_135030) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -33,6 +33,11 @@ ActiveRecord::Schema[7.1].define(version: 2024_02_04_202626) do
     t.index ["source_id", "target_id", "role_id"], name: "index_adjustable_schema_relationships_uniqueness", unique: true
     t.index ["source_type", "source_id"], name: "index_adjustable_schema_relationships_on_source"
     t.index ["target_type", "target_id"], name: "index_adjustable_schema_relationships_on_target"
+  end
+
+  create_table "dummy_models", id: :uuid, default: -> { "gen_random_uuid()" }, force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   add_foreign_key "adjustable_schema_relationships", "adjustable_schema_relationship_roles", column: "role_id"
