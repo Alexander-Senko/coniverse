@@ -34,4 +34,7 @@ Gem::Specification.new do |spec|
 
   # Controllers
   spec.add_dependency 'inherited_resources'
+
+  # Front end
+  spec.add_dependency 'importmap-rails'
 end
