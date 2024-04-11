@@ -4,6 +4,8 @@ require 'inherited_resources'
 require 'slim'
 require 'active_model/inherited_partials'
 require 'importmap-rails'
+require 'turbo-rails'
+require 'stimulus-rails'
 
 module Coniverse
 	class Engine < ::Rails::Engine

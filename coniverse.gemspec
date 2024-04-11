@@ -37,4 +37,6 @@ Gem::Specification.new do |spec|
 
   # Front end
   spec.add_dependency 'importmap-rails'
+  spec.add_dependency 'turbo-rails'
+  spec.add_dependency 'stimulus-rails'
 end
