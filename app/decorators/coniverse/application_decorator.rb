@@ -32,7 +32,7 @@ module Coniverse
 			[
 					*(flag_methods
 							.select(&:call)
-							.map do _1
+							.map do it
 								.name
 								.to_s
 								.chop!
@@ -56,13 +56,13 @@ module Coniverse
 					self,
 					object,
 			]
-					.flat_map { _1
+					.flat_map { it
 							.public_methods
-							.map(&_1.method(:method))
+							.map(&it.method(:method))
 					}
 					.select(&:boolean?)
 					.select(&:parameterless?)
-					.select { Engine.local_method? _1 }
+					.select { Engine.local_method? it }
 		end
 	end
 end
