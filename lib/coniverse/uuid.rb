@@ -2,8 +2,6 @@ module Coniverse
 	module UUID
 		extend ActiveSupport::Concern
 
-		NIL = '00000000-0000-0000-0000-000000000000'
-
 		class Current < ActiveSupport::CurrentAttributes
 			attribute :namespace
 
@@ -30,7 +28,7 @@ module Coniverse
 		end
 
 		included do
-			mattr_reader :uuid, default: Digest::UUID.uuid_v5(NIL, name)
+			mattr_reader :uuid, default: Digest::UUID.uuid_v5(Digest::UUID.nil_uuid, name)
 
 			module_function :within_uuid_namespace
 		end
