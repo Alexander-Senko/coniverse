@@ -9,8 +9,8 @@ module Coniverse
 		let(:model_class) { described_class.object_class }
 		let(:attributes)  { {} }
 
-		describe '#html_class' do
-			subject { super().html_class }
+		describe '#dom_class' do
+			subject { super().dom_class }
 
 			let(:flags) { decorated.flags }
 

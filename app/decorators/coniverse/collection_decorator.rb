@@ -1,9 +1,9 @@
 module Coniverse
 	class CollectionDecorator < Draper::CollectionDecorator
-		def html_class
+		def dom_class
 			[
 					*(decorator_classes
-							.map(&:html_class)
+							.map(&:dom_class)
 							.reduce(&:&)
 					),
 			]
