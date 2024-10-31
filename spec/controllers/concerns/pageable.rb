@@ -6,7 +6,7 @@ RSpec.shared_context :pageable do
 	let(:model_class)       { described_class.resource_class }
 	let(:page_size)         { rand 1..3 }
 	let(:number_of_records) { page_size + 1 }
-	let(:page)              { Page.new(size: page_size).tap { _1.of records.all } }
+	let(:page)              { Page.new(size: page_size).tap { it.of records.all } }
 	let(:records)           { Records.new model_class.all, number_of_records }
 
 	before do

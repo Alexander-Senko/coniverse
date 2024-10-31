@@ -93,7 +93,7 @@ concern :Pageable do
 		def turn **boundary
 			self.class.new({
 					**(boundary
-							.transform_values { _1.created_at.iso8601 9 }
+							.transform_values { it.created_at.iso8601 9 }
 					),
 
 					**settings,
@@ -117,7 +117,7 @@ concern :Pageable do
 				instance_accessor: false
 
 		pageable_view_paths
-				.each { prepend_view_path _1 }
+				.each { prepend_view_path it }
 
 		helper_method :page
 	end
@@ -143,7 +143,7 @@ concern :Pageable do
 					*(Engine if defined? Engine), # this one
 					*engines,                     # the ones of a controller
 					Rails.application,            # host app
-			].map { _1.root/'app/views/pageable' }
+			].map { it.root/'app/views/pageable' }
 		end
 	end
 
@@ -168,7 +168,7 @@ concern :Pageable do
 
 	def end_of_association_chain
 		super
-				.tap { break _1.where _1.arel_table[:created_at].lt page[:before] if page&.looking_backward? }
-				.tap { break _1.where _1.arel_table[:created_at].gt page[:after]  if page&.looking_forward? }
+				.tap { break it.where it.arel_table[:created_at].lt page[:before] if page&.looking_backward? }
+				.tap { break it.where it.arel_table[:created_at].gt page[:after]  if page&.looking_forward? }
 	end
 end
