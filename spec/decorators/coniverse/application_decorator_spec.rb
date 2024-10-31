@@ -9,8 +9,8 @@ module Coniverse
 		let(:model_class) { DummyModel }
 		let(:attributes)  { {} }
 
-		describe '#html_class' do
-			subject { super().html_class }
+		describe '#dom_class' do
+			subject { super().dom_class }
 
 			it { is_expected.to match_array %w[ dummy_model flag1 flag3 ] }
 		end
