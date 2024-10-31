@@ -10,8 +10,8 @@ module Coniverse
 		let(:attributes)  { { lang: } }
 		let(:lang)        { 'xx' }
 
-		describe '#html_class' do
-			subject { super().html_class }
+		describe '#dom_class' do
+			subject { super().dom_class }
 
 			let(:flags) { decorated.flags }
 
@@ -81,6 +81,8 @@ module Coniverse
 		end
 
 		describe '#tag' do
+			include ActionView::Helpers
+
 			subject { super().tag(**options) { content } }
 
 			let(:options) { {} }
@@ -93,7 +95,7 @@ module Coniverse
 					expect(article['lang'])
 							.to eq lang
 					expect(article['class'].split)
-							.to match_array decorated.html_class
+							.to match_array decorated.dom_class
 				end
 
 				is_expected.to have_text content
@@ -109,7 +111,7 @@ module Coniverse
 						expect(article['lang'])
 								.to eq lang
 						expect(article['class'].split)
-								.to match_array decorated.html_class + options[:class]
+								.to match_array decorated.dom_class + options[:class]
 					end
 
 					is_expected.to have_text content
