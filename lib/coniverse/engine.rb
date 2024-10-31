@@ -12,10 +12,10 @@ module Coniverse
 		isolate_namespace Coniverse
 
 		config.generators do
-			_1.test_framework = :rspec
-			_1.helper         = false
+			it.test_framework = :rspec
+			it.helper         = false
 
-			_1.orm :active_record,
+			it.orm :active_record,
 					timestamps:       false,
 					primary_key_type: :uuid
 		end

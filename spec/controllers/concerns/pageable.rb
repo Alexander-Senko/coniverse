@@ -5,7 +5,7 @@ RSpec.shared_context 'pageable controller' do
 	let(:page_size)         { rand(3) + 1 }
 	let(:default_page_size) { page_size * 10 }
 	let(:number_of_records) { page_size + 1 }
-	let(:page)              { Page.new(size: page_size).tap { _1.of records.all } }
+	let(:page)              { Page.new(size: page_size).tap { it.of records.all } }
 	let(:records)           { Records.new model_class.all, number_of_records }
 
 	before do
