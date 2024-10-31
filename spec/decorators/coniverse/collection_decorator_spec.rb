@@ -12,8 +12,8 @@ module Coniverse
 
 		before { model_class.first_or_create! }
 
-		describe '#html_class' do
-			subject { super().html_class }
+		describe '#dom_class' do
+			subject { super().dom_class }
 
 			it { is_expected.to eq %w[ dummy_models ] }
 
