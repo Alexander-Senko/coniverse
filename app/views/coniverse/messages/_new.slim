@@ -1,0 +1,7 @@
+= form_for Message::Text.new parents: [ resource ], lang: I18n.locale do
+	= it.hidden_field :type
+	= it.hidden_field :parent_ids, multiple: true
+
+	= it.text_field :body,
+			autofocus:    true,
+			autocomplete: :off
