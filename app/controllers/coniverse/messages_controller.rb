@@ -15,6 +15,11 @@ module Coniverse
 
 		private
 
+		def collection
+			super
+					.tap { break it.independent unless parent }
+		end
+
 		def message_params
 			params.require(:message).permit(*%i[
 					body
