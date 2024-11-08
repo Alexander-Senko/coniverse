@@ -1,5 +1,5 @@
 module Coniverse
-	class ApplicationDecorator < Draper::Decorator
+	class ApplicationPresenter < Magic::Presenter::Base
 		include DOM
 		include Flagable
 	end
