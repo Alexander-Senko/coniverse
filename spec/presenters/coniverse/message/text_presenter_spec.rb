@@ -1,13 +1,15 @@
 require 'rails_helper'
 
 module Coniverse
-	RSpec.describe Message::TextDecorator do
+	RSpec.describe Message::TextPresenter do
 		subject { decorated }
 
-		let(:object)      { model_class.create! attributes }
-		let(:decorated)   { object.decorate }
-		let(:model_class) { described_class.object_class }
+		let(:record)      { model_class.create! attributes }
+		let(:decorated)   { record.decorate! }
+		let(:model_class) { Message::Text }
 		let(:attributes)  { {} }
+
+		it { is_expected.to be_a described_class }
 
 		describe '#dom_class' do
 			subject { super().dom_class }

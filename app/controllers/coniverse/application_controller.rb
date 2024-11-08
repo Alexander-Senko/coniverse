@@ -3,7 +3,7 @@ require 'inherited_resources/persistence'
 
 module Coniverse
 	class ApplicationController < InheritedResources::Base
-		extend InheritedResources::Decoratable # HACK: let it work with Draper
+		extend InheritedResources::Decoratable
 
 		respond_to :html, :turbo_stream
 

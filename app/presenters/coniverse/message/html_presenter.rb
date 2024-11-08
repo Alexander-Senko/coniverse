@@ -1,6 +1,6 @@
 module Coniverse
 	class Message
-		class TextDecorator < MessageDecorator
+		class HTMLPresenter < TextPresenter
 		end
 	end
 end
