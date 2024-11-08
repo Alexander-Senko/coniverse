@@ -1,0 +1,17 @@
+- cache message do
+	= message.tag do
+		header
+			- if message.title.present?
+				h1
+					= link_to_unless_current message.url
+						= sanitize message.title
+
+			= time_tag message.created_at,
+					lang:  I18n.locale,
+					class: 'created'
+
+		= message.body
+
+		- if message.messages.any?
+			= turbo_frame_tag :messages, src: message_messages_path(message, page: page&.settings) do
+				progress
