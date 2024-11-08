@@ -1,5 +1,5 @@
 require 'adjustable_schema'
-require 'draper'
+require 'magic/presenter'
 require 'inherited_resources'
 require 'slim'
 require 'active_model/inherited_partials'
@@ -13,7 +13,6 @@ module Coniverse
 
 		config.generators do
 			it.test_framework = :rspec
-			it.helper         = false
 
 			it.orm :active_record,
 					timestamps:       false,

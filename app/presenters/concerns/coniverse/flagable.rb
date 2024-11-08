@@ -34,7 +34,7 @@ module Coniverse
 		def flag_methods
 			[
 					self,
-					object,
+					__getobj__,
 			]
 					.flat_map { it
 							.public_methods

@@ -1,13 +1,15 @@
 require 'rails_helper'
 
 module Coniverse
-	RSpec.describe ApplicationDecorator do
+	RSpec.describe ApplicationPresenter do
 		subject { decorated }
 
-		let(:object)      { model_class.new attributes }
-		let(:decorated)   { object.decorate  }
+		let(:record)      { model_class.new attributes }
+		let(:decorated)   { record.decorate!  }
 		let(:model_class) { DummyModel }
 		let(:attributes)  { {} }
+
+		it { is_expected.to be_a described_class }
 
 		describe '#dom_class' do
 			subject { super().dom_class }
