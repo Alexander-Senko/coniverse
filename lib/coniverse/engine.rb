@@ -1,5 +1,5 @@
 require 'adjustable_schema'
-require 'draper'
+require 'magic/presenter'
 require 'inherited_resources'
 require 'slim'
 require 'active_model/inherited_partials'

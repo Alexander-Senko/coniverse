@@ -1,14 +1,16 @@
 require 'rails_helper'
 
 module Coniverse
-	RSpec.describe MessageDecorator do
+	RSpec.describe MessagePresenter do
 		subject { decorated }
 
-		let(:object)      { model_class.create! attributes }
-		let(:decorated)   { object.decorate }
-		let(:model_class) { described_class.object_class }
+		let(:record)      { model_class.create! attributes }
+		let(:decorated)   { record.decorate! }
+		let(:model_class) { Message }
 		let(:attributes)  { { lang: } }
 		let(:lang)        { 'xx' }
+
+		it { is_expected.to be_a described_class }
 
 		describe '#dom_class' do
 			subject { super().dom_class }
@@ -89,7 +91,7 @@ module Coniverse
 			let(:content) { '[content]' }
 
 			it 'renders an article tag with attributes' do
-				is_expected.to have_tag("article##{object.id}") do |articles|
+				is_expected.to have_tag("article##{record.id}") do |articles|
 					article = articles.sole
 
 					expect(article['lang'])
@@ -105,7 +107,7 @@ module Coniverse
 				let(:options) { { class: %w[ c1 c2 ] } }
 
 				it 'renders the tag with extra classes' do
-					is_expected.to have_tag("article##{object.id}") do |articles|
+					is_expected.to have_tag("article##{record.id}") do |articles|
 						article = articles.sole
 
 						expect(article['lang'])

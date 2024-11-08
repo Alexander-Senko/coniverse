@@ -4,7 +4,7 @@ module Coniverse
 			def dom_class
 				[
 						*(ancestors
-								.grep(superclass...ApplicationDecorator)
+								.grep(superclass...ApplicationPresenter)
 								.flat_map(&__method__)
 						),
 
@@ -20,8 +20,7 @@ module Coniverse
 
 		def dom_class
 			[
-					*(object.class
-							.decorator_class
+					*(self.class
 							.dom_class
 							.map(&:singularize)
 					),
@@ -29,11 +28,11 @@ module Coniverse
 		end
 
 		def dom_id
-			case object.class.columns_hash['id'].type
+			case __getobj__.class.columns_hash['id'].type
 			when :uuid
 				id
 			else
-				h.dom_id object
+				dom_id self
 			end
 		end
 
