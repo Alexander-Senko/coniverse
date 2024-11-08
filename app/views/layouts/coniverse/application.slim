@@ -1,7 +1,7 @@
 doctype html
 html lang=I18n.locale
 	head
-		title Con!verse
+		title = [ *@title, 'Con!verse' ].compact.uniq * ' — '
 
 		= csrf_meta_tags
 		= csp_meta_tag
