@@ -51,16 +51,7 @@ concern :Pageable do
 		# Applies pagination boundaries and size to a relation or enumerable.
 		def of records
 			@records =
-					case records
-					when Array
-						records
-					when ActiveRecord::Relation
-						records.send looking_forward? ? :first : :last, size
-					when Draper::CollectionDecorator
-						records.class.decorate of records.object
-					else
-						raise ArgumentError, "no records for #{records.inspect}"
-					end
+					records.send looking_forward? ? :first : :last, size
 		end
 
 		delegate :[], :to_query,

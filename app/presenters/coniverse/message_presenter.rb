@@ -1,11 +1,7 @@
 # frozen_string_literal: true
 
 module Coniverse
-	class MessageDecorator < ApplicationDecorator
-		delegate_all
-
-		decorates_association :messages
-
+	class MessagePresenter < ApplicationPresenter
 		def flat?
 			return if messageless?
 
