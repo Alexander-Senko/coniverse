@@ -5,9 +5,9 @@ Gem::Specification.new do |spec|
   spec.platform    = Gem::Platform::RUBY
   spec.name        = "coniverse"
   spec.version     = Coniverse::VERSION
-  spec.authors     = Coniverse::AUTHORS.filter_map &:name
-  spec.email       = Coniverse::AUTHORS.filter_map &:email
-  spec.homepage    = "#{Coniverse::AUTHORS.filter_map(&:github_url).first}/#{spec.name}"
+  spec.authors     = Coniverse::AUTHORS.names
+  spec.email       = Coniverse::AUTHORS.emails
+  spec.homepage    = "#{Coniverse::AUTHORS.github_url}/#{spec.name}"
   spec.summary     = 'Everything is a message!'
   spec.description = 'A Rails Engine to connect all of your knowledge together.'
   spec.license     = "MIT"
