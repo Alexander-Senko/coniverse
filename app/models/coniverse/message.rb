@@ -12,5 +12,10 @@ module Coniverse
 		store_accessor :metadata, %i[
 				title
 		]
+
+		scope :independent, -> do
+			where.missing(:parents)
+					.roleless
+		end
 	end
 end
