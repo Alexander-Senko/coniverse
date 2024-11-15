@@ -6,9 +6,7 @@
 					= link_to_unless_current message.url
 						= sanitize message.title
 
-			= time_tag message.created_at,
-					lang:  I18n.locale,
-					class: 'created'
+			= message.created_at.tag class: 'created'
 
 		= message.body
 
