@@ -2,6 +2,9 @@
 
 require 'rails_helper'
 
+require 'presenters/concerns/dom'
+require 'presenters/concerns/linkable'
+
 module Coniverse
 	RSpec.describe MessagePresenter do
 		subject { decorated }
@@ -9,8 +12,7 @@ module Coniverse
 		let(:record)      { model_class.create! attributes }
 		let(:decorated)   { record.decorate! }
 		let(:model_class) { Message }
-		let(:attributes)  { { lang: } }
-		let(:lang)        { 'xx' }
+		let(:attributes)  { {} }
 
 		it { is_expected.to be_a described_class }
 
@@ -82,36 +84,41 @@ module Coniverse
 			end
 		end
 
-		describe '#tag' do
-			let(:content) { '[content]' }
-			let(:classes) { %w[ c1 c2 ] }
-
-			it 'renders an article tag with default attributes' do
-				expect(subject.call { concat content })
-						.to have_tag("article##{record.id}") do |articles|
-							article = articles.sole
-
-							expect(article['lang'])
-									.to eq lang
-							expect(article['class'].split)
-									.to match_array decorated.dom_class
-							expect(article.text)
-									.to eq content
-						end
+		it_behaves_like :linkable do
+			describe '#url' do
+				its_result { is_expected.to eq "/coniverse/messages/#{record.id}" }
 			end
+		end
 
-			it 'renders an article tag with extra classes' do
-				expect(subject.call(class: classes) { concat content })
-						.to have_tag("article##{record.id}") do |articles|
-							article = articles.sole
+		it_behaves_like 'DOM builder' do
+			describe '#tag' do
+				it 'renders an article tag with default attributes' do
+					expect(subject.call { concat content })
+							.to have_tag("article##{record.id}") do |articles|
+								article = articles.sole
 
-							expect(article['lang'])
-									.to eq lang
-							expect(article['class'].split)
-									.to match_array decorated.dom_class + classes
-							expect(article.text)
-									.to eq content
-						end
+								expect(article['lang'])
+										.to eq lang
+								expect(article['class'].split)
+										.to match_array decorated.dom_class
+								expect(article.text)
+										.to eq content
+							end
+				end
+
+				it 'renders an article tag with extra classes' do
+					expect(subject.call(class: classes) { concat content })
+							.to have_tag("article##{record.id}") do |articles|
+								article = articles.sole
+
+								expect(article['lang'])
+										.to eq lang
+								expect(article['class'].split)
+										.to match_array decorated.dom_class + classes
+								expect(article.text)
+										.to eq content
+							end
+				end
 			end
 		end
 	end
