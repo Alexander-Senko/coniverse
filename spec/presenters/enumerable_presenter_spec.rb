@@ -10,14 +10,12 @@ RSpec.describe EnumerablePresenter do
 	before { model_class.first_or_create! }
 
 	describe '#dom_class' do
-		subject { super().dom_class }
-
-		it { is_expected.to eq %w[ dummy_models ] }
+		its_result { is_expected.to eq %w[ dummy_models ] }
 
 		context 'with an empty relation' do
 			let(:collection) { model_class.none }
 
-			it { is_expected.to be_empty }
+			its_result { is_expected.to be_empty }
 		end
 	end
 end

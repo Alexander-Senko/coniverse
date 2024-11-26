@@ -23,57 +23,38 @@ RSpec.shared_context 'pageable controller' do
 	end
 
 	describe '#page' do
-		subject { controller.send :page }
-
 		it_behaves_like 'not paginated' do
-			it { is_expected.to be_nil }
+			its_result { is_expected.to be_nil }
 
 			it_behaves_like 'paginated by default' do
-				it 'returns default page settings' do
-					expect(subject.size).to eq default_page_size
-				end
+				its_result { is_expected.to have_attributes size: default_page_size }
 			end
 		end unless described_class.page
 
 		it_behaves_like 'paginated' do
-			it 'returns requested page settings' do
-				expect(subject.size).to eq page_size
-			end
+			its_result { is_expected.to have_attributes size: page_size }
 		end
 	end
 
 	describe '#collection' do
-		subject { controller.send :collection }
-
 		it_behaves_like 'not paginated' do
-			it 'returns all the records' do
-				is_expected.to eq records
-						.all
-			end
-
-			it { is_expected.to be_decorated }
+			its_result { is_expected.to eq records.all }
+			its_result { is_expected.to be_decorated }
 		end
 
 		it_behaves_like 'paginated' do
-			it 'returns a page of records' do
-				is_expected.to eq records
-						.last(page_size)
-			end
-
-			it { is_expected.to be_decorated }
+			its_result { is_expected.to eq records.last(page_size) }
+			its_result { is_expected.to be_decorated }
 
 			context 'when looking backward' do
 				let(:params) { { page: page.previous } }
 
-				it 'returns a page of records' do
-					is_expected.to eq records
-							.last(page_size * 2)[...-page_size]
-				end
+				its_result { is_expected.to eq records.last(page_size * 2)[...-page_size] }
 
 				context 'when beyond the limit' do
 					let(:records) { ex = self; super().scoped { limit ex.page_size } }
 
-					it { is_expected.to be_empty }
+					its_result { is_expected.to be_empty }
 				end
 			end
 
@@ -81,16 +62,12 @@ RSpec.shared_context 'pageable controller' do
 				let(:params)  { { page: page.next } }
 				let(:records) { super().scoped { reverse_order } }
 
-				it 'returns a page of records' do
-					is_expected.to eq records
-							.reverse_order
-							.first(page_size + 1)[1...]
-				end
+				its_result { is_expected.to eq records.reverse_order.first(page_size + 1)[1...] }
 
 				context 'when beyond the limit' do
 					let(:records) { super().scoped { reverse_order } }
 
-					it { is_expected.to be_empty }
+					its_result { is_expected.to be_empty }
 				end
 			end
 		end

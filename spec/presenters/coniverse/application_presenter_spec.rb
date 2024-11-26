@@ -12,15 +12,11 @@ module Coniverse
 		it { is_expected.to be_a described_class }
 
 		describe '#dom_class' do
-			subject { super().dom_class }
-
-			it { is_expected.to match_array %w[ dummy_model flag1 flag3 ] }
+			its_result { is_expected.to match_array %w[ dummy_model flag1 flag3 ] }
 		end
 
 		describe '#flags' do
-			subject { super().flags }
-
-			it { is_expected.to match_array %w[ flag1 flag3 ] }
+			its_result { is_expected.to match_array %w[ flag1 flag3 ] }
 		end
 	end
 end
