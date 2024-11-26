@@ -10,7 +10,7 @@ module Coniverse
 			context 'with emoji and some markup' do
 				let(:body) { '<p>🙂</p>' }
 
-				it { is_expected.to be_emoji }
+				its_result { is_expected.to be true }
 			end
 		end
 	end

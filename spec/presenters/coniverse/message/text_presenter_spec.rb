@@ -14,11 +14,9 @@ module Coniverse
 		it { is_expected.to be_a described_class }
 
 		describe '#dom_class' do
-			subject { super().dom_class }
-
 			let(:flags) { decorated.flags }
 
-			it { is_expected.to eq %w[ message text ] + flags }
+			its_result { is_expected.to eq %w[ message text ] + flags }
 		end
 	end
 end
