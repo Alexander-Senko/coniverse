@@ -28,6 +28,10 @@ module Coniverse
 				end
 			end
 
+			describe '#url' do
+				its_result { is_expected.to eq "/coniverse/messages/#{record.id}" }
+			end
+
 			describe '#link' do
 				it_behaves_like 'with a title' do
 					its_result do
