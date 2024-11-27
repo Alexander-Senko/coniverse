@@ -2,6 +2,8 @@
 
 require 'rails_helper'
 
+require 'presenters/concerns/linkable'
+
 module Coniverse
 	RSpec.describe Message::TextPresenter do
 		subject { decorated }
@@ -17,6 +19,12 @@ module Coniverse
 			let(:flags) { decorated.flags }
 
 			its_result { is_expected.to eq %w[ message text ] + flags }
+		end
+
+		it_behaves_like :linkable do
+			describe '#url' do
+				its_result { is_expected.to eq "/coniverse/messages/#{record.id}" }
+			end
 		end
 	end
 end
