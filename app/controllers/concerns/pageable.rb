@@ -123,7 +123,7 @@ concern :Pageable do
 
 	def end_of_association_chain
 		super
-				.tap { break it.where it.arel_table[:created_at].lt page[:before] if page&.looking_backward? }
-				.tap { break it.where it.arel_table[:created_at].gt page[:after]  if page&.looking_forward? }
+				.optional { it.where it.arel_table[:created_at].lt page[:before] if page&.looking_backward? }
+				.optional { it.where it.arel_table[:created_at].gt page[:after]  if page&.looking_forward? }
 	end
 end
