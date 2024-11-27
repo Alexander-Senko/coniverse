@@ -1,12 +1,10 @@
 - cache message do
 	= message.tag do
 		header
-			- if message.title.present?
+			- message.heading do
 				h1
-					= link_to_unless_current message.url
-						= sanitize message.title
-
-			= message.created_at.tag class: 'created'
+					= it
+			= message.created
 
 		= message.body
 
