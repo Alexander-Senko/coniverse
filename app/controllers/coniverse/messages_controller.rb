@@ -17,7 +17,7 @@ module Coniverse
 
 		def collection
 			super
-					.tap { break it.independent unless parent }
+					.optional { it.independent unless parent }
 		end
 
 		def message_params

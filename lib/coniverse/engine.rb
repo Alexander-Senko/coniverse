@@ -7,6 +7,7 @@ require 'action_dispatch/inherited_routes'
 require 'importmap-rails'
 require 'turbo-rails'
 require 'stimulus-rails'
+require 'magic/core_ext/kernel/optional'
 
 module Coniverse
 	class Engine < ::Rails::Engine
