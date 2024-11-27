@@ -14,7 +14,6 @@ group :test do
 	gem 'rspec-rails'
 	gem 'rspec-dom-testing', require: false
 	gem 'rspec-its'
-	gem 'magic-support'
 end
 
 # Start debugger with binding.b [https://github.com/ruby/debug]
