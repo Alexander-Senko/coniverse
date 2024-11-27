@@ -26,6 +26,10 @@ module Coniverse
 			its_result { is_expected.to eq %w[ message text html ] + flags }
 		end
 
+		describe '#url' do
+			its_result { is_expected.to eq "/coniverse/messages/#{record.id}" }
+		end
+
 		describe '#link' do
 			def current_page?(...) = false
 

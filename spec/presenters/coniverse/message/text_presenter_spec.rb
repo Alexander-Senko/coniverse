@@ -16,5 +16,9 @@ module Coniverse
 
 			its_result { is_expected.to eq %w[ message text ] + flags }
 		end
+
+		describe '#url' do
+			its_result { is_expected.to eq "/coniverse/messages/#{record.id}" }
+		end
 	end
 end
