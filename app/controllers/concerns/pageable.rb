@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require 'memery'
-
 # = Pageable controller concern
 #
 # Include this concern to add pagination support to a controller.
