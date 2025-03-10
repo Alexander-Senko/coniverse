@@ -1,5 +1,3 @@
-require 'memery'
-
 concern :Pageable do
 	include Memery
 
