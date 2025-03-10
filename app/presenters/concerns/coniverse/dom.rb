@@ -1,7 +1,9 @@
 module Coniverse
 	concern :DOM do
 		class_methods do
-			def dom_class
+			include Memery
+
+			memoize def dom_class
 				[
 						*(ancestors
 								.grep(superclass...ApplicationPresenter)
