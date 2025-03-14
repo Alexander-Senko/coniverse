@@ -27,10 +27,14 @@ module Coniverse
 		end
 
 		class << self
+			def title = 'Con!verse'
+
 			def local_method? method
 				(method.source_location or return)[0]
 						.starts_with? root.to_s
 			end
 		end
 	end
+
+	singleton_class.delegate_missing_to Engine
 end
