@@ -20,6 +20,14 @@ module Coniverse
 
 		it { is_expected.to be_a described_class }
 
+		describe '#title' do
+			its_result { is_expected.to be_nil }
+
+			it_behaves_like 'with a title' do
+				its_result { is_expected.to be_html_safe }
+			end
+		end
+
 		describe '#dom_class' do
 			let(:flags) { decorated.flags }
 

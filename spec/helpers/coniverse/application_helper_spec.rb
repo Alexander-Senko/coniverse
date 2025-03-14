@@ -59,6 +59,13 @@ module Coniverse
 						its_result { is_expected.to eq "#{(title - blanks) * ' — '} — #{Engine.title}" }
 					end
 				end
+
+				context 'with HTML' do
+					let(:title) { "<code>#{text}</code>" }
+					let(:text)  { SecureRandom.uuid }
+
+					its_result { is_expected.to eq "#{text} — #{Engine.title}" }
+				end
 			end
 		end
 	end
