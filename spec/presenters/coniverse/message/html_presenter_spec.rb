@@ -28,6 +28,14 @@ module Coniverse
 				end
 			end
 
+			describe '#title' do
+				its_result { is_expected.to be_nil }
+
+				it_behaves_like 'with a title' do
+					its_result { is_expected.to be_html_safe }
+				end
+			end
+
 			describe '#url' do
 				its_result { is_expected.to eq "/coniverse/messages/#{record.id}" }
 			end

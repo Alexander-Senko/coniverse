@@ -3,6 +3,7 @@ module Coniverse
 		def title
 			[
 					*(Array(@title)
+							.map { strip_tags it }
 							.map(&:presence)
 					),
 
