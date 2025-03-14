@@ -20,6 +20,12 @@ module Coniverse
 					primary_key_type: :uuid
 		end
 
+		initializer 'coniverse.action_view', after: 'action_view' do
+			config.action_view.sanitized_allowed_attributes = ActionView::Base.sanitized_allowed_attributes + %w[
+					data-marker
+			]
+		end
+
 		initializer 'coniverse.importmap', before: 'importmap' do
 			config.importmap.paths          << Engine.root/'config/importmap.rb'
 			config.importmap.cache_sweepers << Engine.root/'app/javascript'
