@@ -7,5 +7,15 @@ module Coniverse
 		seed! Message, roles: %i[
 				translation
 		]
+
+		# Actors
+		seed! Actor => Message, roles: %i[
+				author
+				editor
+		]
+
+		seed! Message::Text => Actor, roles: %i[
+				name
+		]
 	end
 end

@@ -29,6 +29,11 @@ module Coniverse
 
 		middleware.use Rack::Locale
 
+		AdjustableSchema::Engine.config
+				.actor_model_names.concat %w[
+						Coniverse::Actor
+				]
+
 		class << self
 			def title = 'Con!verse'
 
