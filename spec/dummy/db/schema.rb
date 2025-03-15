@@ -10,9 +10,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_04_04_135030) do
+ActiveRecord::Schema[8.0].define(version: 2024_04_04_135030) do
   # These are extensions that must be enabled in order to support this database
-  enable_extension "plpgsql"
+  enable_extension "pg_catalog.plpgsql"
 
   create_table "action_text_rich_texts", id: :uuid, default: -> { "gen_random_uuid()" }, force: :cascade do |t|
     t.string "name", null: false
@@ -71,6 +71,13 @@ ActiveRecord::Schema[7.1].define(version: 2024_04_04_135030) do
     t.index ["source_id", "target_id", "role_id"], name: "index_adjustable_schema_relationships_uniqueness", unique: true
     t.index ["source_type", "source_id"], name: "index_adjustable_schema_relationships_on_source"
     t.index ["target_type", "target_id"], name: "index_adjustable_schema_relationships_on_target"
+  end
+
+  create_table "coniverse_actors", id: :uuid, default: -> { "gen_random_uuid()" }, force: :cascade do |t|
+    t.string "type"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["type"], name: "index_coniverse_actors_on_type"
   end
 
   create_table "coniverse_messages", id: :uuid, default: -> { "gen_random_uuid()" }, force: :cascade do |t|
