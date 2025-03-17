@@ -40,4 +40,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'importmap-rails'
   spec.add_dependency 'turbo-rails'
   spec.add_dependency 'stimulus-rails'
+
+  # Internationalization
+  spec.add_dependency 'cld'
 end
