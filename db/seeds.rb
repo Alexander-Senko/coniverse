@@ -5,6 +5,7 @@ module Coniverse
 	AdjustableSchema::Relationship.module_eval do
 		# Messages
 		seed! Message, roles: %i[
+				translation
 		]
 	end
 end
