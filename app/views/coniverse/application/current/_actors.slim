@@ -1,0 +1,7 @@
+ul.actors data={ controller: :actors, current: { id: Current.actor&.id } }
+	- for actor in actors do
+		- cache actor do
+			= actor.tag :li do
+				= button_to current_actor_path(actor), method: :put do
+					abbr.name
+						= actor.name.text.first
