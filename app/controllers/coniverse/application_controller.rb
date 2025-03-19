@@ -5,6 +5,8 @@ module Coniverse
 	class ApplicationController < InheritedResources::Base
 		extend InheritedResources::Decoratable
 
+		include Localized
+
 		respond_to :html, :turbo_stream
 
 		self.responder      = ApplicationResponder

@@ -4,6 +4,7 @@ require 'inherited_resources'
 require 'slim'
 require 'active_model/inherited_partials'
 require 'action_dispatch/inherited_routes'
+require 'rack/contrib'
 require 'importmap-rails'
 require 'turbo-rails'
 require 'stimulus-rails'
@@ -25,6 +26,8 @@ module Coniverse
 			config.importmap.paths          << Engine.root/'config/importmap.rb'
 			config.importmap.cache_sweepers << Engine.root/'app/javascript'
 		end
+
+		middleware.use Rack::Locale
 
 		class << self
 			def title = 'Con!verse'
