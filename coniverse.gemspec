@@ -42,5 +42,6 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'stimulus-rails'
 
   # Internationalization
+  spec.add_dependency 'rack-contrib' # provides Rack::Locale
   spec.add_dependency 'cld'
 end
