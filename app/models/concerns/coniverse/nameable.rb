@@ -1,0 +1,33 @@
+# frozen_string_literal: true
+
+module Coniverse # :nodoc:
+	# = Nameable model concern
+	#
+	# This concern is used to add translatable names to models.
+	#
+	# Under the hood, names are text messages. A model’s name corresponds
+	# to the current locale.
+	concern :Nameable do
+		delegate :to_s, to: :name_message
+
+		def name_messages = name_text_messages
+				.unscope(:order)
+				.in_order_of(:lang, I18n.available_locales.including(nil))
+
+		def name_message = name_messages
+				.for_locale
+				.first
+
+		def names = name_messages
+				.map(&:to_s)
+				.uniq
+
+		def name = name_message
+				&.to_s
+
+		def name= name
+			name_messages.find_or_initialize_by(lang: I18n.locale)
+					.body = name
+		end
+	end
+end
