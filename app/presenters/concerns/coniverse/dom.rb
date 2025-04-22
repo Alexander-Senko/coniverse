@@ -38,8 +38,8 @@ module Coniverse
 			end
 		end
 
-		def tag **options, &block
-			h.tag.public_send(tag_name,
+		def tag name = tag_name, **options, &block
+			h.tag.public_send(name,
 					id: dom_id,
 
 					class: [ # add
