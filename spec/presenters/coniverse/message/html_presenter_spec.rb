@@ -4,19 +4,12 @@ require 'presenters/concerns/linkable'
 
 module Coniverse
 	RSpec.describe Message::HTMLPresenter do
-		subject { decorated }
+		it_behaves_like 'DOM builder' do
+			describe '#dom_class' do
+				let(:flags) { decorated.flags }
 
-		let(:record)      { model_class.create! attributes }
-		let(:decorated)   { record.decorate! }
-		let(:model_class) { Message::HTML }
-		let(:attributes)  { {} }
-
-		it { is_expected.to be_a described_class }
-
-		describe '#dom_class' do
-			let(:flags) { decorated.flags }
-
-			its_result { is_expected.to eq %w[ message text html ] + flags }
+				its_result { is_expected.to eq %w[ message text html ] + flags }
+			end
 		end
 
 		it_behaves_like 'linkable presenter' do

@@ -1,8 +1,6 @@
 require 'rails_helper'
 
 RSpec.describe EnumerablePresenter do
-	subject { decorated }
-
 	let(:collection)  { model_class.all }
 	let(:decorated)   { collection.decorate! }
 	let(:model_class) { DummyModel }
