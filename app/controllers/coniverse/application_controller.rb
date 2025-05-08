@@ -14,5 +14,9 @@ module Coniverse
 		self.resource_class = nil # don't even try to guess
 
 		before_action :verify_requested_format!
+
+		private
+
+		def reload_page = redirect_back_or_to resource
 	end
 end
