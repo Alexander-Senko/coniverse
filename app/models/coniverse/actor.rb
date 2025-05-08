@@ -7,5 +7,8 @@ module Coniverse
 	# * to author messages and their modifications,
 	# * to participate in conversations.
 	class Actor < ApplicationRecord
+		def current? = self == Current.actor
+
+		def available? = in? Current.actors
 	end
 end
