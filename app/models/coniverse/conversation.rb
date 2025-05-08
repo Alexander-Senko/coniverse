@@ -28,6 +28,7 @@ module Coniverse
 		def title
 			super or
 					actors
+							.without(Current.actor)
 							.map(&:name)
 							.join(', ')
 							.presence

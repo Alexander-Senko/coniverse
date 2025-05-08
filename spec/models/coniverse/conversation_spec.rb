@@ -24,6 +24,12 @@ module Coniverse
 			end
 
 			its_result { actors.each { is_expected.to include it.name } }
+
+			context 'with a current actor' do
+				before { Current.actor = actors.first }
+
+				its_result { is_expected.to eq actors.last.name }
+			end
 		end
 	end
 end
