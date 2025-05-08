@@ -6,6 +6,7 @@ module Coniverse
 		extend InheritedResources::Decoratable
 
 		include Localized
+		include Actors
 
 		respond_to :html, :turbo_stream
 
