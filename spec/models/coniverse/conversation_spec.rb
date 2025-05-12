@@ -10,8 +10,8 @@ module Coniverse
 		let(:title)           {}
 
 		describe '.between' do
-			its_result(actors)                      { is_expected.to contain_exactly subject.receiver }
-			its_result(actors.first)                { is_expected.to contain_exactly subject.receiver }
+			its_result(actors)                      { is_expected.to contain_exactly receiver }
+			its_result(actors.first)                { is_expected.to contain_exactly receiver }
 			its_result(              Actor.create!) { is_expected.to be_empty }
 			its_result(actors.first, Actor.create!) { is_expected.to be_empty }
 		end

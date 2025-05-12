@@ -22,7 +22,7 @@ RSpec.shared_context :localizable do
 	end
 
 	describe '#for_locale' do
-		let(:model) { subject.receiver.tap { it.lang = lang } }
+		let(:model) { receiver.tap { it.lang = lang } }
 
 		shared_examples 'returns a corresponding translation' do
 			its_result       { is_expected.to have_attributes lang: I18n.locale }
@@ -62,7 +62,7 @@ RSpec.shared_context :localizable do
 	end
 
 	describe '#detect_language!' do
-		let(:model) { subject.receiver }
+		let(:model) { receiver }
 		let(:lang0) { :cn }
 
 		before do

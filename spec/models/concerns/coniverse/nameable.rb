@@ -7,7 +7,7 @@ module Coniverse
 		it { is_expected.to be_a Nameable }
 
 		describe '#name' do
-			let(:model) { subject.receiver }
+			let(:model) { receiver }
 			let(:name)  { 'foo' }
 
 			before { model.update name: }
