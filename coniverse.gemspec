@@ -26,7 +26,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'magic-support'
 
   # Models
-  spec.add_dependency 'adjustable_schema', '~> 0.8'
+  spec.add_dependency 'adjustable_schema', '~> 0.11'
 
   # Views
   spec.add_dependency 'slim-rails'

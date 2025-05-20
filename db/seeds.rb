@@ -2,19 +2,19 @@
 
 module Coniverse
 	# Setup model relationships
-	AdjustableSchema::Relationship.module_eval do
+	AdjustableSchema.module_eval do
 		# Messages
-		seed! Message, roles: %i[
+		relationship! Message, roles: %i[
 				translation
 		]
 
 		# Actors
-		seed! Actor => Message, roles: %i[
+		relationship! Actor => Message, roles: %i[
 				author
 				editor
 		]
 
-		seed! Message::Text => Actor, roles: %i[
+		relationship! Message::Text => Actor, roles: %i[
 				name
 		]
 	end
