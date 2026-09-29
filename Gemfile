@@ -25,6 +25,7 @@ group :development do
 	gem 'brakeman',            require: false
 
 	gem 'rbs', require: false
+	gem 'rubygems-author'
 end
 
 # Start debugger with binding.b [https://github.com/ruby/debug]
