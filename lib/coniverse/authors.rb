@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require 'rubygems/author'
+require_relative '../../vendor/gems/rubygems-author/lib/rubygems/author'
 
 module Coniverse
 	class Author < Gem::Author # :nodoc:
