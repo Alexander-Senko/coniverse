@@ -6,6 +6,12 @@ module Coniverse
 		#
 		# Plain text.
 		class Text < self
+			self.content_type = 'text/plain'
+
+			content_types.concat %w[
+					text/markdown
+			]
+
 			delegate :to_s, to: :body
 
 			def text = to_s

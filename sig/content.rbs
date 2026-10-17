@@ -1,0 +1,12 @@
+interface _Content
+	def content_type:           -> String
+	def content_type=: (String) -> String
+end
+
+module Content : _Content, ActiveModel::Validations
+	module ClassMethods[T < Class]
+		def content_types: -> Array[String]
+
+		def with_content_type: (String) -> (T | self)?
+	end
+end

@@ -9,8 +9,11 @@ module Coniverse
 	class Message < ApplicationRecord
 		default_scope { order :created_at }
 
+		prepend Content
+
 		store_accessor :metadata, %i[
 				title
+				content_type
 		]
 
 		scope :independent, -> do

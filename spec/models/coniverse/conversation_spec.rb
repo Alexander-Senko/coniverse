@@ -2,12 +2,16 @@
 
 require 'rails_helper'
 
+require 'models/concerns/content'
+
 module Coniverse
 	RSpec.describe Conversation do
 		subject { described_class.create! title:, actors: }
 
 		cattr_reader(:actors) { 2.times.map { Actor.create! name: "Actor ##{it}" } }
 		let(:title)           {}
+
+		it_behaves_like :content
 
 		describe '.between' do
 			its_result(actors)                      { is_expected.to contain_exactly receiver }

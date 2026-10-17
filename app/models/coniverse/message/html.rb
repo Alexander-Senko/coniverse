@@ -6,6 +6,8 @@ module Coniverse
 		#
 		# Rich text in HTML format with optional media attachments.
 		class HTML < Text
+			self.content_type = 'text/html'
+
 			has_rich_text     :body
 			has_many_attached :media
 

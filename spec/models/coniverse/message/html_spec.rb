@@ -2,9 +2,13 @@
 
 require 'rails_helper'
 
+require 'models/concerns/content'
+
 module Coniverse
 	RSpec.describe Message::HTML do
 		subject { described_class.new body: }
+
+		it_behaves_like :content
 
 		describe '#emoji?' do
 			context 'with emoji and some markup' do
