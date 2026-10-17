@@ -1,0 +1,69 @@
+app/models/coniverse/message/text.rb
+  s_a2fa14b5299f4e::t_4d7d6a9f5af369 7-8
+  h_3633b6af39cc3f 9
+  s_a2fa14b5299f4e::t_1f48a505deb93d 6
+  s_a2fa14b5299f4e::t_9c38788f6cd9d3 4-5
+spec/models/coniverse/message/html_spec.rb
+  s_a2fa14b5299f4e::t_bd186f64ad2dbe 10
+  h_3633b6af39cc3f 3
+  s_d79783e09fd7c8::t_062c08d9777e08 9
+  s_a2fa14b5299f4e::t_db16ab7ea3119b 4
+spec/models/coniverse/message/text_spec.rb
+  s_a2fa14b5299f4e::t_7511a6aebe8187 10-14
+  s_d79783e09fd7c8::t_7352b03e7d0fa8 9
+  s_a2fa14b5299f4e::t_4fb74f3a77cb4b 15
+  s_a2fa14b5299f4e::t_623c32a81e8227 4
+  s_a2fa14b5299f4e::t_a9a248d4557426 3
+sig/content.rbs
+  h_3633b6af39cc3f 5-6,10
+  h_3633b6af39cc3f 1-4,7-9,11-14
+spec/models/coniverse/message_spec.rb
+  h_3633b6af39cc3f 4,9
+spec/models/coniverse/conversation_spec.rb
+  h_3633b6af39cc3f 3,11
+  s_d79783e09fd7c8::t_81fea456991ecf 13
+  s_a2fa14b5299f4e::t_36c92dc6383cf9 4
+  h_3633b6af39cc3f 12
+config/initializers/models/content.rb
+  s_d79783e09fd7c8::t_0aa0fedac13637 4
+  h_3633b6af39cc3f 1-2,5-6
+  h_3633b6af39cc3f 3,7
+app/models/concerns/content.rb
+  h_3633b6af39cc3f 1-34
+spec/models/concerns/content.rb
+  h_3633b6af39cc3f 1-85
+app/models/coniverse/message.rb
+  h_3633b6af39cc3f 5-6
+  h_3633b6af39cc3f 9
+app/models/coniverse/message/html.rb
+  h_3633b6af39cc3f 4-5
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "84ab36af42d6a79f35d221142b74f03f517532fc",
+  "prompts": {},
+  "humans": {
+    "h_3633b6af39cc3f": {
+      "author": "Alexander Senko <Alexander.Senko@gmail.com>"
+    }
+  },
+  "sessions": {
+    "s_a2fa14b5299f4e": {
+      "agent_id": {
+        "tool": "github-copilot-jetbrains",
+        "id": "1792089272587",
+        "model": "unknown"
+      },
+      "human_author": "Alexander Senko <Alexander.Senko@gmail.com>"
+    },
+    "s_d79783e09fd7c8": {
+      "agent_id": {
+        "tool": "github-copilot-jetbrains",
+        "id": "1792248793658",
+        "model": "unknown"
+      },
+      "human_author": "Alexander Senko <Alexander.Senko@gmail.com>"
+    }
+  }
+}
