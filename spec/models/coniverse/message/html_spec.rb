@@ -8,6 +8,8 @@ module Coniverse
 	RSpec.describe Message::HTML do
 		subject { described_class.new body: }
 
+		let(:body) { '<p>Message body</p>' }
+
 		it_behaves_like :content
 
 		describe '#emoji?' do

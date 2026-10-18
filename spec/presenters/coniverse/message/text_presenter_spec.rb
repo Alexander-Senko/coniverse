@@ -6,6 +6,9 @@ require 'presenters/concerns/linkable'
 
 module Coniverse
 	RSpec.describe Message::TextPresenter do
+		let(:attributes) { { body: } }
+		let(:body)       { 'Message body' }
+
 		it_behaves_like 'DOM builder' do
 			describe '#dom_class' do
 				let(:flags) { decorated.flags }

@@ -8,6 +8,8 @@ module Coniverse
 	RSpec.describe Message::Text do
 		subject { described_class.new body: }
 
+		let(:body) { 'Message body' }
+
 		it_behaves_like :content do
 			let(:content_types) { %w[
 					text/plain

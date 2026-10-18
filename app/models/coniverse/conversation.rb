@@ -17,6 +17,8 @@ module Coniverse
 	# As a conversation is a message, the message content is used for
 	# conversation’s description.
 	class Conversation < Message::HTML
+		validates :body, presence: false
+
 		default_scope { reorder updated_at: :desc }
 
 		scope :between, -> *actors { actors.flatten!

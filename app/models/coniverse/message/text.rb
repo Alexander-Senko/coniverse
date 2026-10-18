@@ -12,6 +12,8 @@ module Coniverse
 					text/markdown
 			]
 
+			validates :body, presence: true
+
 			delegate :to_s, to: :body
 
 			def text = to_s
