@@ -1,0 +1,14 @@
+lib/action_dispatch/inherited_routes.rb
+  h_3633b6af39cc3f 1-7,36
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "3bc8d7e88d0d08e1061f8c6af207a19a3d280252",
+  "prompts": {},
+  "humans": {
+    "h_3633b6af39cc3f": {
+      "author": "Alexander Senko <Alexander.Senko@gmail.com>"
+    }
+  }
+}
