@@ -35,6 +35,6 @@ concern :Linkable do
 				.lazy
 				.filter_map { try it }
 				.first
-				&.optional { strip_links it unless current_page? }
+				&.then(unless: current_page?) { strip_links it }
 	end
 end

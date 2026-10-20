@@ -19,7 +19,7 @@ module Coniverse
 
 		def collection
 			super
-					.optional { it.independent unless parent }
+					.then_try { it.independent unless parent }
 		end
 
 		def message_params

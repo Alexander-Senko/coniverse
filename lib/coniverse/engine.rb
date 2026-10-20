@@ -8,7 +8,7 @@ require 'rack/contrib'
 require 'importmap-rails'
 require 'turbo-rails'
 require 'stimulus-rails'
-require 'magic/core_ext/kernel/optional'
+require 'magic/core_ext/kernel/then'
 
 module Coniverse
 	class Engine < ::Rails::Engine
