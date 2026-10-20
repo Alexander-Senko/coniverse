@@ -1,0 +1,75 @@
+spec/presenters/coniverse/message/text_presenter_spec.rb
+  s_d79783e09fd7c8::t_4877db991ab391 8-9
+  s_d79783e09fd7c8::t_2a481be5268122 7
+app/models/coniverse/message/text.rb
+  h_3633b6af39cc3f 10-11
+config/initializers/models/validations.rb
+  s_d79783e09fd7c8::t_fb168274e8de76 43
+  h_3633b6af39cc3f 1-2,4-12,16-20,30-32,33,34-35,36,38-40,42,44,45,46,49,50
+  s_d79783e09fd7c8::t_da5ae38d0b7a7c 13-15,21-29,47-48
+  s_d79783e09fd7c8::t_8a397de9d40838 3
+  s_d79783e09fd7c8::t_7f07d8d7a5f01a 37
+  s_d79783e09fd7c8::t_1f0e04377079c0 41
+  h_3633b6af39cc3f 33,36,45,50
+app/models/coniverse/conversation.rb
+  h_3633b6af39cc3f 3-4
+spec/presenters/coniverse/message/html_presenter_spec.rb
+  s_d79783e09fd7c8::t_ffa8a7f23149ea 8-9
+  h_3633b6af39cc3f 7
+spec/models/coniverse/message/text_spec.rb
+  h_3633b6af39cc3f 9-10
+spec/models/coniverse/message/html_spec.rb
+  h_3633b6af39cc3f 9-10
+spec/models/concerns/localizable.rb
+  h_3633b6af39cc3f 1
+spec/models/coniverse/message_spec.rb
+  h_3633b6af39cc3f 4,9
+app/controllers/concerns/pageable.rb
+  h_3633b6af39cc3f 1-2,49,55
+  h_3633b6af39cc3f 49,55
+spec/controllers/concerns/pageable.rb
+  s_d79783e09fd7c8::t_68bc14bfa56e2d 7
+  s_8a02a5af79b247::t_0b54e5d645072a 42
+  h_3633b6af39cc3f 1-2,5,32-33,36-37,39,50,51,53,54-55
+  s_d79783e09fd7c8::t_dffc1e24887101 69
+  s_8a02a5af79b247::t_c23eec47279bbf 52
+  h_3633b6af39cc3f 1-2,5,39,53
+spec/requests/pageable.rb
+  s_d79783e09fd7c8::t_95f0fc49e8638b 6
+  h_3633b6af39cc3f 1-2,7
+  h_3633b6af39cc3f 1-2
+spec/support/records.rb
+  h_3633b6af39cc3f 1-3,17,19,20,27-28
+  h_3633b6af39cc3f 1-3,17,19,27-28
+spec/controllers/coniverse/messages_controller_spec.rb
+  h_3633b6af39cc3f 1-2,11
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "4c8a833a06646ad32c4de409468a961d07587828",
+  "prompts": {},
+  "humans": {
+    "h_3633b6af39cc3f": {
+      "author": "Alexander Senko <Alexander.Senko@gmail.com>"
+    }
+  },
+  "sessions": {
+    "s_8a02a5af79b247": {
+      "agent_id": {
+        "tool": "github-copilot-jetbrains",
+        "id": "1792458186960",
+        "model": "unknown"
+      },
+      "human_author": "Alexander Senko <Alexander.Senko@gmail.com>"
+    },
+    "s_d79783e09fd7c8": {
+      "agent_id": {
+        "tool": "github-copilot-jetbrains",
+        "id": "1792248793658",
+        "model": "unknown"
+      },
+      "human_author": "Alexander Senko <Alexander.Senko@gmail.com>"
+    }
+  }
+}
