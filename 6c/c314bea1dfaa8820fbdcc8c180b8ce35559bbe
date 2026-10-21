@@ -1,0 +1,32 @@
+app/presenters/concerns/linkable.rb
+  h_3633b6af39cc3f 33
+coniverse.gemspec
+  s_8a02a5af79b247::t_38f9f66f0359e6 26
+lib/coniverse/engine.rb
+  h_3633b6af39cc3f 11
+app/controllers/coniverse/messages_controller.rb
+  h_3633b6af39cc3f 20
+app/controllers/concerns/pageable.rb
+  h_3633b6af39cc3f 150-151
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "6cc314bea1dfaa8820fbdcc8c180b8ce35559bbe",
+  "prompts": {},
+  "humans": {
+    "h_3633b6af39cc3f": {
+      "author": "Alexander Senko <Alexander.Senko@gmail.com>"
+    }
+  },
+  "sessions": {
+    "s_8a02a5af79b247": {
+      "agent_id": {
+        "tool": "github-copilot-jetbrains",
+        "id": "1792458186960",
+        "model": "unknown"
+      },
+      "human_author": "Alexander Senko <Alexander.Senko@gmail.com>"
+    }
+  }
+}
