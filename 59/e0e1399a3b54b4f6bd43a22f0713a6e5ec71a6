@@ -1,0 +1,38 @@
+spec/requests/coniverse/actors_spec.rb
+  s_3d19baeecbc2f7::t_0aaff9f4dc2218 16
+  s_3d19baeecbc2f7::t_5ab1b5592d1591 19
+  s_3d19baeecbc2f7::t_7e236a6d6dec10 27
+  h_3633b6af39cc3f 15,17
+  s_3d19baeecbc2f7::t_5e5c79ba96acaf 53
+  s_3d19baeecbc2f7::t_ef3e40d4ed5309 43
+  s_3d19baeecbc2f7::t_4570bb2a95e59c 20
+  h_3633b6af39cc3f 18
+spec/dummy/app/controllers/coniverse/currents_controller.rb
+  h_3633b6af39cc3f 1-9
+spec/dummy/config/routes.rb
+  h_3633b6af39cc3f 3,5-7
+  s_3d19baeecbc2f7::t_29b1f89a03d709 4
+  s_3d19baeecbc2f7::t_b0f14366d2ae07 8
+  h_3633b6af39cc3f 2
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "59e0e1399a3b54b4f6bd43a22f0713a6e5ec71a6",
+  "prompts": {},
+  "humans": {
+    "h_3633b6af39cc3f": {
+      "author": "Alexander Senko <Alexander.Senko@gmail.com>"
+    }
+  },
+  "sessions": {
+    "s_3d19baeecbc2f7": {
+      "agent_id": {
+        "tool": "github-copilot-jetbrains",
+        "id": "1792598263110",
+        "model": "unknown"
+      },
+      "human_author": "Alexander Senko <Alexander.Senko@gmail.com>"
+    }
+  }
+}
