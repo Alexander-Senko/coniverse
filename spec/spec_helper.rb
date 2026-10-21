@@ -4,6 +4,15 @@
 # this file to always be loaded, without a need to explicitly require it in any
 # files.
 
+require 'active_support/core_ext/string/inflections'
+
+ENV['RBS_TEST_TARGET'] ||= %w[
+		Coniverse::*
+].concat(Pathname('sig').glob('*.rbs')
+		.map { it.basename.sub_ext '' }
+		.map { it.to_s.camelize }
+) * ','
+
 require 'rspec/its'
 require 'rspec/method'
 
@@ -94,4 +103,9 @@ RSpec.configure do |config|
   # as the one that triggered the failure.
   Kernel.srand config.seed
 =end
+
+	config.before :suite do
+		# Ensure app files are loaded before setting up RBS hooks
+		require 'rbs/test/setup'
+	end
 end

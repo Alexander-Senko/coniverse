@@ -7,4 +7,7 @@
 /spec/dummy/storage/
 /spec/dummy/tmp/
 
+/.gem_rbs_collection/
+/rbs_collection.lock.yaml
+
 /Gemfile.lock
