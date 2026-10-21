@@ -13,7 +13,7 @@ spec/requests/coniverse/actors_spec.rb
 spec/dummy/app/controllers/coniverse/currents_controller.rb
   h_3633b6af39cc3f 1-9
 spec/dummy/config/routes.rb
-  h_3633b6af39cc3f 3,5-7
+  h_3633b6af39cc3f 2,3,5-7
   s_3d19baeecbc2f7::t_29b1f89a03d709 4
   s_3d19baeecbc2f7::t_b0f14366d2ae07 8
   h_3633b6af39cc3f 2
