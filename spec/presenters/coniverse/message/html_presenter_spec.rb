@@ -18,11 +18,13 @@ module Coniverse
 		end
 
 		it_behaves_like :linkable do
-			shared_context 'with a title' do
-				let(:title) { "<code>#{SecureRandom.uuid}</code>" }
+			silence_warnings do
+				shared_context 'with a title' do
+					let(:title) { "<code>#{SecureRandom.uuid}</code>" }
 
-				shared_context 'with links' do
-					let(:title) { [ link_to('[link]', '/'), super() ] * ' ' }
+					shared_context 'with links' do
+						let(:title) { [ link_to('[link]', '/'), super() ] * ' ' }
+					end
 				end
 			end
 

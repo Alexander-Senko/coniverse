@@ -15,8 +15,6 @@ module Coniverse
 		isolate_namespace Coniverse
 
 		config.generators do
-			it.test_framework = :rspec
-
 			it.orm :active_record,
 					timestamps:       false,
 					primary_key_type: :uuid
