@@ -5,7 +5,7 @@ Gemfile
 db/migrate/02_create_coniverse_actors.rb
   h_3633b6af39cc3f 1-2
 app/models/coniverse/actor.rb
-  h_3633b6af39cc3f 1-2,4-5
+  h_3633b6af39cc3f 1-2,4-5,6-7
   s_1ee995ad17893a::t_d0860d37124771 8
   h_3633b6af39cc3f 6-7
 spec/models/coniverse/actor_spec.rb
