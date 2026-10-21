@@ -1,0 +1,16 @@
+spec/rails_helper.rb
+  h_3633b6af39cc3f 10
+spec/support/presenter_helper.rb
+  h_3633b6af39cc3f 3-4,6-9,11-12,14-15
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "ba8fc6a861a874da753edf93817ddd9060906c7a",
+  "prompts": {},
+  "humans": {
+    "h_3633b6af39cc3f": {
+      "author": "Alexander Senko <Alexander.Senko@gmail.com>"
+    }
+  }
+}
