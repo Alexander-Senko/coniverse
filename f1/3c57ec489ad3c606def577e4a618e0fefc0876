@@ -1,0 +1,35 @@
+spec/decorators/coniverse/message/html_decorator_spec.rb
+  s_1ee995ad17893a::t_8eb66870c376f9 1-2
+  s_1ee995ad17893a::t_57d6bced46516f 3-5
+spec/decorators/coniverse/message_decorator_spec.rb
+  s_1ee995ad17893a::t_5b7e51b0dd899f 58
+  s_1ee995ad17893a::t_2d2457ea3cada6 1-2
+  s_1ee995ad17893a::t_99ff2bad08fa6a 27
+  s_1ee995ad17893a::t_813a291093b7b4 3-5,24-26
+  s_1ee995ad17893a::t_1a0e984e9d069a 28-30,55-57
+  s_1ee995ad17893a::t_fa6af07db9bf33 59-61
+spec/decorators/coniverse/message/text_decorator_spec.rb
+  s_1ee995ad17893a::t_88fbc5cf3f75f1 1-2
+  s_1ee995ad17893a::t_cad27bb722c12f 3-5
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "f13c57ec489ad3c606def577e4a618e0fefc0876",
+  "prompts": {},
+  "humans": {
+    "h_3633b6af39cc3f": {
+      "author": "Alexander Senko <Alexander.Senko@gmail.com>"
+    }
+  },
+  "sessions": {
+    "s_1ee995ad17893a": {
+      "agent_id": {
+        "tool": "github-copilot-jetbrains",
+        "id": "1792614414549",
+        "model": "unknown"
+      },
+      "human_author": "Alexander Senko <Alexander.Senko@gmail.com>"
+    }
+  }
+}
