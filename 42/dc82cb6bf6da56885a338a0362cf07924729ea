@@ -1,0 +1,17 @@
+app/presenters/concerns/linkable.rb
+  h_3633b6af39cc3f 5
+  h_3633b6af39cc3f 1-4
+spec/presenters/concerns/dom.rb
+  h_3633b6af39cc3f 1-2
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "42dc82cb6bf6da56885a338a0362cf07924729ea",
+  "prompts": {},
+  "humans": {
+    "h_3633b6af39cc3f": {
+      "author": "Alexander Senko <Alexander.Senko@gmail.com>"
+    }
+  }
+}
