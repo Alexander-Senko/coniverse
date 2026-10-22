@@ -1,0 +1,45 @@
+config/initializers/models/validations.rb
+  s_d79783e09fd7c8::t_1f0e04377079c0 41
+  s_d79783e09fd7c8::t_8a397de9d40838 3
+  h_3633b6af39cc3f 1-2,4-12,16-20,30-36,38-40,42,44-46,49-50
+  s_d79783e09fd7c8::t_fb168274e8de76 43
+  s_d79783e09fd7c8::t_da5ae38d0b7a7c 13-15,21-29,47-48
+  s_d79783e09fd7c8::t_7f07d8d7a5f01a 37
+spec/models/coniverse/message/html_spec.rb
+  h_3633b6af39cc3f 9-10
+spec/presenters/coniverse/message/text_presenter_spec.rb
+  s_d79783e09fd7c8::t_4877db991ab391 8-9
+  s_d79783e09fd7c8::t_2a481be5268122 7
+spec/models/coniverse/message/text_spec.rb
+  h_3633b6af39cc3f 9-10
+spec/presenters/coniverse/message/html_presenter_spec.rb
+  h_3633b6af39cc3f 7
+  s_d79783e09fd7c8::t_ffa8a7f23149ea 8-9
+app/models/coniverse/message/text.rb
+  h_3633b6af39cc3f 10-11
+app/models/coniverse/conversation.rb
+  h_3633b6af39cc3f 20-21
+lib/action_dispatch/inherited_routes.rb
+  h_3633b6af39cc3f 1-7,36
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "eecbc832954c44404b5bb3d42160849d54c9a3fc",
+  "prompts": {},
+  "humans": {
+    "h_3633b6af39cc3f": {
+      "author": "Alexander Senko <Alexander.Senko@gmail.com>"
+    }
+  },
+  "sessions": {
+    "s_d79783e09fd7c8": {
+      "agent_id": {
+        "tool": "github-copilot-jetbrains",
+        "id": "1792248793658",
+        "model": "unknown"
+      },
+      "human_author": "Alexander Senko <Alexander.Senko@gmail.com>"
+    }
+  }
+}
