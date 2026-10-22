@@ -1,0 +1,14 @@
+spec/models/coniverse/conversation_spec.rb
+  h_3633b6af39cc3f 13-14
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "bf7b7d6d61647f5ecc5e2fd885c0b8d300e5ef5b",
+  "prompts": {},
+  "humans": {
+    "h_3633b6af39cc3f": {
+      "author": "Alexander Senko <Alexander.Senko@gmail.com>"
+    }
+  }
+}
