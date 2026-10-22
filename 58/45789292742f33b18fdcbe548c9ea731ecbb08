@@ -1,0 +1,18 @@
+spec/models/concerns/localizable.rb
+  h_3633b6af39cc3f 1-2,4
+app/models/concerns/localizable.rb
+  h_3633b6af39cc3f 1-2,9
+config/initializers/models/localizable.rb
+  h_3633b6af39cc3f 1-2
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "5845789292742f33b18fdcbe548c9ea731ecbb08",
+  "prompts": {},
+  "humans": {
+    "h_3633b6af39cc3f": {
+      "author": "Alexander Senko <Alexander.Senko@gmail.com>"
+    }
+  }
+}
