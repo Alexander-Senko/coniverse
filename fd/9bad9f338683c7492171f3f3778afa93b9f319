@@ -88,7 +88,7 @@ spec/models/coniverse/message/text_spec.rb
 spec/models/coniverse/message_spec.rb
   h_3633b6af39cc3f 1-2
 app/presenters/concerns/coniverse/dom/enumerable.rb
-  h_3633b6af39cc3f 1-2,7
+  h_3633b6af39cc3f 1-2,5-6,7
   h_3633b6af39cc3f 5-6
 app/presenters/enumerable_presenter.rb
   h_3633b6af39cc3f 1-2
