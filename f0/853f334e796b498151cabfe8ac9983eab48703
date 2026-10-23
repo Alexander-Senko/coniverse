@@ -1,0 +1,14 @@
+app/controllers/coniverse/messages_controller.rb
+  h_3633b6af39cc3f 1-2
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "f0853f334e796b498151cabfe8ac9983eab48703",
+  "prompts": {},
+  "humans": {
+    "h_3633b6af39cc3f": {
+      "author": "Alexander Senko <Alexander.Senko@gmail.com>"
+    }
+  }
+}
