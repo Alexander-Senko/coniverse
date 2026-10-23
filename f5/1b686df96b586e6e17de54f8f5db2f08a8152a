@@ -1,0 +1,25 @@
+app/controllers/concerns/localized.rb
+  s_ab3dd95eab83b4::t_3dbc0148f56bf2 7,9-10
+  h_3633b6af39cc3f 1-6,8
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "f51b686df96b586e6e17de54f8f5db2f08a8152a",
+  "prompts": {},
+  "humans": {
+    "h_3633b6af39cc3f": {
+      "author": "Alexander Senko <Alexander.Senko@gmail.com>"
+    }
+  },
+  "sessions": {
+    "s_ab3dd95eab83b4": {
+      "agent_id": {
+        "tool": "github-copilot-jetbrains",
+        "id": "1792749439109",
+        "model": "unknown"
+      },
+      "human_author": null
+    }
+  }
+}
