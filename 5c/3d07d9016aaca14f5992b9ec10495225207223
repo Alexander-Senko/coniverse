@@ -1,0 +1,24 @@
+app/models/coniverse/message.rb
+  h_3633b6af39cc3f 1-2,4-8
+config/initializers/inflections.rb
+  h_3633b6af39cc3f 1-2
+app/models/coniverse/message/text.rb
+  h_3633b6af39cc3f 1-2,5-7
+app/models/coniverse/message/html.rb
+  h_3633b6af39cc3f 1-2,5-7
+spec/models/coniverse/message/html_spec.rb
+  h_3633b6af39cc3f 1-2
+spec/models/coniverse/message/text_spec.rb
+  h_3633b6af39cc3f 1-2
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "5c3d07d9016aaca14f5992b9ec10495225207223",
+  "prompts": {},
+  "humans": {
+    "h_3633b6af39cc3f": {
+      "author": "Alexander Senko <Alexander.Senko@gmail.com>"
+    }
+  }
+}
