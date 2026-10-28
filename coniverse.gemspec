@@ -27,6 +27,7 @@ Gem::Specification.new do |spec|
 
   # Models
   spec.add_dependency 'adjustable_schema', '~> 0.11'
+  spec.add_dependency 'baby_squeel'
 
   # Views
   spec.add_dependency 'slim-rails'

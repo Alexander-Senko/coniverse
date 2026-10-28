@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require 'baby_squeel'
+
 # = Pageable controller concern
 #
 # Include this concern to add pagination support to a controller.
@@ -51,8 +53,8 @@ concern :Pageable do
 		# Applies pagination boundaries and size to a relation or enumerable.
 		def of records
 			@records = records
-					.then_try { it.where it.arel_table[:created_at].lt @params[:before] if looking_backward? }
-					.then_try { it.where it.arel_table[:created_at].gt @params[:after]  if looking_forward?  }
+					.then_try { it.where.has { it.created_at < @params[:before] } if looking_backward? }
+					.then_try { it.where.has { it.created_at > @params[:after]  } if looking_forward?  }
 					.send looking_forward? ? :first : :last, size
 		end
 
