@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+require 'delegate'
 require 'baby_squeel'
 
 # = Pageable controller concern
@@ -29,7 +30,7 @@ concern :Pageable do
 	# - `size`:   the number of records per page.
 	# - `before`: the timestamp to fetch records before (for backward pagination).
 	# - `after`:  the timestamp to fetch records after (for forward pagination).
-	class Page
+	class Page < Delegator
 		include Magic::Presentable
 
 		# Builds a page from the controller's `page` parameters or a settings hash.
@@ -49,6 +50,8 @@ concern :Pageable do
 							before after
 					]
 		end
+
+		def __getobj__ = @records
 
 		# Applies pagination boundaries and size to a relation or enumerable.
 		def of records

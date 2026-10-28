@@ -1,4 +1,4 @@
-class Page
+class Page < Delegator
 	@params:  ActionController::Parameters
 	@records: Array[ActiveRecord::Base]
 
