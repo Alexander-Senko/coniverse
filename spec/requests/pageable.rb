@@ -15,10 +15,20 @@ RSpec.shared_examples 'pageable resource' do
 				size: page_size,
 		} }
 
+		let(:headers) { {
+				'Accept' => 'text/html',
+		} }
+
 		before do
 			records.create!
 
-			get "/#{$namespace}/#{path}", params:
+			get "/#{$namespace}/#{path}", params:, headers:
+		end
+
+		shared_context 'with Turbo Stream' do
+			let(:headers) { {
+					'Accept' => 'text/vnd.turbo-stream.html',
+			} }
 		end
 
 		context 'without pagination' do
@@ -36,12 +46,20 @@ RSpec.shared_examples 'pageable resource' do
 				let(:params) { { page: { **page, before: records.scope.maximum(:created_at) } } }
 
 				it { is_expected.to have_http_status :ok }
+
+				it_behaves_like 'with Turbo Stream' do
+					it { is_expected.to have_http_status :ok }
+				end
 			end
 
 			context 'when forward' do
 				let(:params) { { page: { **page, after: records.scope.minimum(:created_at) } } }
 
 				it { is_expected.to have_http_status :ok }
+
+				it_behaves_like 'with Turbo Stream' do
+					it { is_expected.to have_http_status :ok }
+				end
 			end
 		end
 	end
