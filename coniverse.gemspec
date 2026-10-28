@@ -30,7 +30,7 @@ Gem::Specification.new do |spec|
 
   # Views
   spec.add_dependency 'slim-rails'
-  spec.add_dependency 'magic-presenter', '~> 1.2'
+  spec.add_dependency 'magic-presenter', '~> 1.3'
   spec.add_dependency 'active_model-inherited_partials'
 
   # Controllers

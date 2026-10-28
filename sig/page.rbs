@@ -2,9 +2,14 @@ class Page
 	@params:  ActionController::Parameters
 	@records: Array[ActiveRecord::Base]
 
-	def initialize: (ActionController::Parameters | Hash[(:size | :before | :after), Integer]) -> void
+	def initialize: (ActionController::Parameters
+			| Hash[(:size | :before | :after), Integer]
+	) -> void
 
-	def of: (ActiveRecord::Relation | Enumerable[ActiveRecord::Base]) -> Array[ActiveRecord::Base]
+	def of: (ActiveRecord::Relation
+			| Magic::Presenter::Collection
+			| Enumerable[ActiveRecord::Base]
+	) -> Array[ActiveRecord::Base]
 
 	def size: -> Integer?
 

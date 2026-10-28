@@ -2,6 +2,12 @@
 
 module Coniverse
 	concern :DOM do
+		included do
+			collection_presenter do
+				include DOM::Enumerable
+			end
+		end
+
 		class_methods do
 			include Memery
 

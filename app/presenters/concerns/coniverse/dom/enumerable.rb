@@ -8,6 +8,10 @@ module Coniverse
 		module Enumerable
 			def dom_class
 				[
+						*(try(:item_presenter)
+								&.dom_class
+						),
+
 						*(self
 								.map(&:class)
 								.map(&:dom_class)

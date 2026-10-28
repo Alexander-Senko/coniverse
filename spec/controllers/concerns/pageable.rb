@@ -51,12 +51,12 @@ RSpec.shared_context :pageable do
 				its_result { is_expected.to eq records.all }
 			end
 
-			its_result { is_expected.to be_decorated }
+			its_result { is_expected.not_to be_decorated }
 		end
 
 		it_behaves_like 'paginated' do
 			its_result { is_expected.to eq records.last(page_size) }
-			its_result { is_expected.to be_decorated }
+			its_result { is_expected.not_to be_decorated }
 
 			context 'when looking backward' do
 				let(:params) { { page: page.previous } }

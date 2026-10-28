@@ -3,8 +3,6 @@ require 'inherited_resources/persistence'
 
 module Coniverse
 	class ApplicationController < InheritedResources::Base
-		extend InheritedResources::Decoratable
-
 		include Localized
 		include Actors
 

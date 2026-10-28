@@ -3,7 +3,7 @@
 require 'rails_helper'
 
 RSpec.describe EnumerablePresenter do
-	let(:collection)  { model_class.all }
+	let(:collection)  { model_class.all.to_a }
 	let(:decorated)   { collection.decorate! }
 	let(:model_class) { DummyModel }
 
@@ -13,7 +13,7 @@ RSpec.describe EnumerablePresenter do
 		its_result { is_expected.to eq %w[ dummy_models ] }
 
 		context 'with an empty relation' do
-			let(:collection) { model_class.none }
+			let(:collection) { [] }
 
 			its_result { is_expected.to be_empty }
 		end
