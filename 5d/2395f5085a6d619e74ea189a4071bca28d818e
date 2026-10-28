@@ -1,0 +1,54 @@
+sig/page.rbs
+  s_fe25fc31b61599::t_57010c6d6b0c84 9,11-12
+  h_3633b6af39cc3f 10
+  s_fe25fc31b61599::t_fa2806c7012e78 6-8
+  h_3633b6af39cc3f 5
+spec/support/presenter_helper.rb
+  h_3633b6af39cc3f 12-13,16-17,21,25
+  s_fe25fc31b61599::t_bc973e30cbe5d0 14-15,19,22-24,26-29
+  s_fe25fc31b61599::t_1227d1584a81fb 18
+  s_fe25fc31b61599::t_c1e74e80d87784 20
+app/presenters/concerns/coniverse/dom.rb
+  s_fe25fc31b61599::t_f5f74b944b6c47 4,6
+  h_3633b6af39cc3f 5,8
+  s_fe25fc31b61599::t_73b09929b42996 3
+  h_3633b6af39cc3f 7
+spec/presenters/coniverse/application_presenter_spec.rb
+  h_3633b6af39cc3f 14-16,18,22,25,27
+  s_fe25fc31b61599::t_47b7d39082f8d0 17,26
+  s_fe25fc31b61599::t_b6fcfbca575b98 19-20,24
+  s_fe25fc31b61599::t_44d289c7799539 21
+  s_fe25fc31b61599::t_6b60db1d59d170 23
+app/presenters/enumerable_presenter.rb
+  h_3633b6af39cc3f 3-4,7-11,13,18
+  s_fe25fc31b61599::t_85bb290e4a9352 14-17
+  h_3633b6af39cc3f 12
+spec/controllers/concerns/pageable.rb
+  s_fe25fc31b61599::t_99e16b171d7727 59
+  h_3633b6af39cc3f 54
+spec/presenters/enumerable_presenter_spec.rb
+  h_3633b6af39cc3f 6,16
+coniverse.gemspec
+  h_3633b6af39cc3f 33
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "5d2395f5085a6d619e74ea189a4071bca28d818e",
+  "prompts": {},
+  "humans": {
+    "h_3633b6af39cc3f": {
+      "author": "Alexander Senko <Alexander.Senko@gmail.com>"
+    }
+  },
+  "sessions": {
+    "s_fe25fc31b61599": {
+      "agent_id": {
+        "tool": "github-copilot-jetbrains",
+        "id": "1792926681261",
+        "model": "unknown"
+      },
+      "human_author": "Alexander Senko <Alexander.Senko@gmail.com>"
+    }
+  }
+}
