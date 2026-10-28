@@ -10,7 +10,7 @@ module Coniverse
 			describe '#dom_class' do
 				let(:flags) { decorated.flags }
 
-				its_result { is_expected.to eq %w[ actor ] + flags }
+				its_result { is_expected.to eq flags + %w[ actor ] }
 			end
 
 			describe '#dom_id' do

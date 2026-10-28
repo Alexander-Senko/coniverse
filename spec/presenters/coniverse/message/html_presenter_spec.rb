@@ -13,7 +13,7 @@ module Coniverse
 			describe '#dom_class' do
 				let(:flags) { decorated.flags }
 
-				its_result { is_expected.to eq %w[ message text html ] + flags }
+				its_result { is_expected.to eq flags + %w[ message text html ] }
 			end
 		end
 

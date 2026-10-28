@@ -2,16 +2,14 @@
 
 module Coniverse
 	class ConversationPresenter < Message::HTMLPresenter
-		def dom_class
-			[
-					*super,
+		def dom_class = Set[
+				*super,
 
-					*{
-							1    => 'monologue',
-							2    => 'dialogue',
-							3... => 'group',
-					}.select { it === actors.size }.values,
-			]
-		end
+				*{
+						1    => 'monologue',
+						2    => 'dialogue',
+						3... => 'group',
+				}.select { it === actors.size }.values,
+		]
 	end
 end

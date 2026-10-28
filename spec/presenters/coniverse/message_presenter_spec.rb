@@ -69,7 +69,7 @@ module Coniverse
 			describe '#dom_class' do
 				let(:flags) { decorated.flags }
 
-				its_result { is_expected.to eq %w[ message ] + flags }
+				its_result { is_expected.to eq flags + %w[ message ] }
 			end
 
 			describe '#dom_id' do

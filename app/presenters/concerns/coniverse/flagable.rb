@@ -2,26 +2,22 @@
 
 module Coniverse
 	concern :Flagable do
-		def dom_class
-			[
-					*(super if defined? super),
+		def dom_class = Set[
+				*(super if defined? super),
 
-					*flags,
-			].uniq
-		end
+				*flags,
+		]
 
-		def flags
-			[
-					*(flag_methods
-							.select(&:call)
-							.map do it
-									.name
-									.to_s
-									.chop!
-							end
-					),
-			]
-		end
+		def flags = Set[
+				*(flag_methods
+						.select(&:call)
+						.map do it
+								.name
+								.to_s
+								.chop!
+						end
+				),
+		]
 
 		private
 

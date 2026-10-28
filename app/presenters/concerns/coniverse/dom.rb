@@ -11,31 +11,28 @@ module Coniverse
 		class_methods do
 			include Memery
 
-			memoize def dom_class
-				[
-						*(ancestors
-								.grep(superclass...ApplicationPresenter)
-								.flat_map(&__method__)
-						),
-
-						*(model_name
-								.unnamespaced
-								.underscore
-								.split('/')
-								.map(&:pluralize)
-						),
-				].uniq
-			end
-		end
-
-		def dom_class
-			[
-					*(self.class
-							.dom_class
-							.map(&:singularize)
+			memoize def dom_class = Set[
+					*(ancestors
+							.grep(superclass...ApplicationPresenter)
+							.map(&__method__)
+							.reduce(&:|)
 					),
-			].uniq
+
+					*(model_name
+							.unnamespaced
+							.underscore
+							.split('/')
+							.map(&:pluralize)
+					),
+			]
 		end
+
+		def dom_class = Set[
+				*(self.class
+						.dom_class
+						.map(&:singularize)
+				),
+		]
 
 		def dom_id
 			case __getobj__.class.columns_hash['id'].type

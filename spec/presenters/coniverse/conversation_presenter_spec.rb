@@ -35,7 +35,7 @@ module Coniverse
 		describe '#dom_class' do
 			let(:flags) { decorated.flags }
 
-			its_result { is_expected.to eq %w[ message text html conversation ] + flags }
+			its_result { is_expected.to eq flags + %w[ message text html conversation ] }
 
 			it_behaves_like :monologue do
 				its_result { is_expected.to include 'monologue' }

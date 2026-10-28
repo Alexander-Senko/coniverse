@@ -10,7 +10,7 @@ RSpec.describe EnumerablePresenter do
 	before { model_class.first_or_create! }
 
 	describe '#dom_class' do
-		its_result { is_expected.to eq %w[ dummy_models ] }
+		its_result { is_expected.to match_array %w[ dummy_models ] }
 
 		context 'with an empty relation' do
 			let(:collection) { [] }
