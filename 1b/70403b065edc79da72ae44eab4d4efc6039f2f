@@ -1,0 +1,23 @@
+app/views/pageable/paginator/_previous.slim
+  h_3633b6af39cc3f 1
+app/controllers/concerns/pageable.rb
+  h_3633b6af39cc3f 31-32
+  h_3633b6af39cc3f 51-54,57
+app/views/pageable/paginator/_next.slim
+  h_3633b6af39cc3f 1
+app/views/pageable/application/index.turbo_stream.slim
+  h_3633b6af39cc3f 1
+app/views/pageable/application/_collection.slim
+  h_3633b6af39cc3f 1,5
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "1b70403b065edc79da72ae44eab4d4efc6039f2f",
+  "prompts": {},
+  "humans": {
+    "h_3633b6af39cc3f": {
+      "author": "Alexander Senko <Alexander.Senko@gmail.com>"
+    }
+  }
+}
