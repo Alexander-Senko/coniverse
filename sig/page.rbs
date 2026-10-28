@@ -28,6 +28,6 @@ class Page
 	def turn: (before: ActiveRecord::Base) -> Page
 			|     (after:  ActiveRecord::Base) -> Page
 
-	def settings:         -> hash[(:size), untyped]
-	def rendering_method: -> (:append | :prepend)
+	def settings: -> hash[(:size), untyped]
+	def to_query: -> String
 end

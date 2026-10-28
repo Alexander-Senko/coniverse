@@ -28,6 +28,8 @@ concern :Pageable do
 	# - `before`: the timestamp to fetch records before (for backward pagination).
 	# - `after`:  the timestamp to fetch records after (for forward pagination).
 	class Page
+		include Magic::Presentable
+
 		# Builds a page from the controller's `page` parameters or a settings hash.
 		def initialize params
 			@params =
@@ -48,11 +50,13 @@ concern :Pageable do
 
 		# Applies pagination boundaries and size to a relation or enumerable.
 		def of records
-			@records =
-					records.send looking_forward? ? :first : :last, size
+			@records = records
+					.then_try { it.where it.arel_table[:created_at].lt @params[:before] if looking_backward? }
+					.then_try { it.where it.arel_table[:created_at].gt @params[:after]  if looking_forward?  }
+					.send looking_forward? ? :first : :last, size
 		end
 
-		delegate :[], :to_query,
+		delegate :to_query,
 				to: :@params
 
 		# The configured number of records per page.
@@ -69,9 +73,6 @@ concern :Pageable do
 		def looking_backward? = :before.in? @params
 		# Whether the current pagination goes forward.
 		def looking_forward?  = :after .in? @params
-
-		def previous? = (full? and (last? or looking_backward?))
-		def next?     = (full? and looking_forward?)
 
 		# Previous page parameters.
 		def previous = turn before: @records.first
@@ -95,8 +96,6 @@ concern :Pageable do
 					before after
 			]
 		end
-
-		def rendering_method = looking_forward? ? :append : :prepend
 	end
 
 	prepended do
@@ -152,12 +151,4 @@ concern :Pageable do
 
 		page.of super
 	end, condition: -> { page }
-
-	private
-
-	def end_of_association_chain
-		super
-				.then_try { it.where it.arel_table[:created_at].lt page[:before] if page&.looking_backward? }
-				.then_try { it.where it.arel_table[:created_at].gt page[:after]  if page&.looking_forward? }
-	end
 end
