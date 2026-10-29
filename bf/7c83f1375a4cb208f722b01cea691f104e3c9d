@@ -1,0 +1,14 @@
+sig/page.rbs
+  h_3633b6af39cc3f 31-32
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "bf7c83f1375a4cb208f722b01cea691f104e3c9d",
+  "prompts": {},
+  "humans": {
+    "h_3633b6af39cc3f": {
+      "author": "Alexander Senko <Alexander.Senko@gmail.com>"
+    }
+  }
+}
