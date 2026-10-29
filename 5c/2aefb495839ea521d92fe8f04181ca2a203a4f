@@ -1,0 +1,24 @@
+coniverse.gemspec
+  s_a08f5c031c7b11::t_1f12923cae47b7 1-3,7-30,34-37,39-40,42-45,47-49
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "5c2aefb495839ea521d92fe8f04181ca2a203a4f",
+  "prompts": {},
+  "humans": {
+    "h_3633b6af39cc3f": {
+      "author": "Alexander Senko <Alexander.Senko@gmail.com>"
+    }
+  },
+  "sessions": {
+    "s_a08f5c031c7b11": {
+      "agent_id": {
+        "tool": "github-copilot-cli",
+        "id": "6acc0613-17fe-48bd-88af-cfa3a3f4384f",
+        "model": "unknown"
+      },
+      "human_author": "Alexander Senko <Alexander.Senko@gmail.com>"
+    }
+  }
+}
