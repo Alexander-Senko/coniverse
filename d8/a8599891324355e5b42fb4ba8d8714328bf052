@@ -1,0 +1,25 @@
+app/controllers/concerns/pageable.rb
+  s_a08f5c031c7b11::t_7365f799ccf2bb 36,46,54,65,68
+  h_3633b6af39cc3f 71,73,76,78,81,83,86,97,106,144,148
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "d8a8599891324355e5b42fb4ba8d8714328bf052",
+  "prompts": {},
+  "humans": {
+    "h_3633b6af39cc3f": {
+      "author": "Alexander Senko <Alexander.Senko@gmail.com>"
+    }
+  },
+  "sessions": {
+    "s_a08f5c031c7b11": {
+      "agent_id": {
+        "tool": "github-copilot-cli",
+        "id": "6acc0613-17fe-48bd-88af-cfa3a3f4384f",
+        "model": "unknown"
+      },
+      "human_author": "Alexander Senko <Alexander.Senko@gmail.com>"
+    }
+  }
+}
