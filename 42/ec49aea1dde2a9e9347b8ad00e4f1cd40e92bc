@@ -1,0 +1,18 @@
+app/controllers/concerns/pageable.rb
+  h_3633b6af39cc3f 3,33,53-54
+  h_3633b6af39cc3f 53-54
+lib/coniverse/uuid.rb
+  h_3633b6af39cc3f 4-8,12,24-25,47
+  h_3633b6af39cc3f 28,41-42
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "42ec49aea1dde2a9e9347b8ad00e4f1cd40e92bc",
+  "prompts": {},
+  "humans": {
+    "h_3633b6af39cc3f": {
+      "author": "Alexander Senko <Alexander.Senko@gmail.com>"
+    }
+  }
+}
