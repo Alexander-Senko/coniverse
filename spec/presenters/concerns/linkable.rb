@@ -52,7 +52,7 @@ RSpec.shared_context :linkable do
 				end
 			end
 
-			it 'renders the tag with extra classes' do
+			it 'renders the tag with extra classes' do # rubocop:disable RSpec/MultipleExpectations
 				expect(subject.call class: classes)
 						.to have_tag('a') do |links|
 							link = links.sole
@@ -68,7 +68,7 @@ RSpec.shared_context :linkable do
 						end
 			end
 
-			it 'renders the tag with content specified' do
+			it 'renders the tag with content specified' do # rubocop:disable RSpec/MultipleExpectations
 				expect(subject.call { concat content })
 						.to have_tag('a') do |links|
 							link = links.sole

@@ -7,7 +7,7 @@ module Coniverse
 		subject { helper }
 
 		before do
-			helper.instance_variable_set :@title, title if
+			@title = title if
 					defined? title
 		end
 

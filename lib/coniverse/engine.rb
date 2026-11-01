@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'adjustable_schema'
 require 'magic/presenter'
 require 'inherited_resources'
@@ -28,7 +30,7 @@ module Coniverse
 		middleware.use Rack::Locale
 
 		AdjustableSchema::Engine.config
-				.actor_model_names.concat %w[
+				.actor_model_names.push *%w[
 						Coniverse::Actor
 				]
 

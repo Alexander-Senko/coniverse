@@ -1,5 +1,9 @@
 # frozen_string_literal: true
 
+# Enhanced nested method chains
+#
+# rubocop:disable Layout/MultilineMethodCallIndentation
+
 module Coniverse
 	RSpec.shared_context :authorable do
 		let(:actor) { Actor.first_or_create! }
@@ -10,6 +14,8 @@ module Coniverse
 			around { Current.set actor:, &it }
 		end
 
+		# rubocop:disable-next RSpec/ContextWording
+		# rubocop:disable-next RSpec/ExpectChange
 		describe 'callbacks' do
 			subject { described_class.new }
 

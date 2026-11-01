@@ -25,6 +25,7 @@ class PagePresenter < Magic::Presenter::Base
 
 		return unless send "#{direction}?"
 
+		# rubocop:disable-next Layout
 		turbo_frame_tag([ :load_page, direction ],
 				src: {
 						page:   send(direction),

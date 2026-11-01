@@ -14,7 +14,7 @@ concern :Linkable do
 				**({ lang: } if
 						respond_to? :lang
 				),
-		**, &)
+		**, &) # rubocop:disable Layout
 	end
 
 	def current_page?

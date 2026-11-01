@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 Gem::Author ||= Struct.new(
 		:name,
 		:email,

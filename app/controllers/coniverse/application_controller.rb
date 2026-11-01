@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'inherited_resources/naming'
 require 'inherited_resources/persistence'
 

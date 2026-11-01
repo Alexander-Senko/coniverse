@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
-module Coniverse # :nodoc:
+# rubocop:disable Rails/Delegate
+
+module Coniverse
 	concern :Authorable do
 		included do
 			after_create(if: :actor) { authored_by! actor } if method_defined? :authored_by!

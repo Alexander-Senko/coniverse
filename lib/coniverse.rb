@@ -1,5 +1,7 @@
-require "coniverse/version"
-require "coniverse/engine"
+# frozen_string_literal: true
+
+require 'coniverse/version'
+require 'coniverse/engine'
 
 module Coniverse
 	autoload :UUID, 'coniverse/uuid'

@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+# rubocop:disable RSpec/LeakyLocalVariable
+
 RSpec.shared_context :content do
 	let(:content_types) { [ *receiver.content_type ] }
 

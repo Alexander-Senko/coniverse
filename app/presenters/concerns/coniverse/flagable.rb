@@ -11,7 +11,7 @@ module Coniverse
 		def flags = Set[
 				*(flag_methods
 						.select(&:call)
-						.map do it
+						.map do it # rubocop:disable Layout
 								.name
 								.to_s
 								.chop!
@@ -34,7 +34,7 @@ module Coniverse
 					self,
 					__getobj__,
 			]
-					.flat_map { it
+					.flat_map { it # rubocop:disable Layout
 							.public_methods
 							.map(&it.method(:method))
 					}

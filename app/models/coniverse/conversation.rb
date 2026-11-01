@@ -21,7 +21,7 @@ module Coniverse
 
 		default_scope { reorder updated_at: :desc }
 
-		scope :between, -> *actors { actors.flatten!
+		scope :between, -> *actors { actors.flatten! # rubocop:disable Layout
 			joins(:actors)
 					.where(actors: { id: actors })
 					.group(:id).having('COUNT(*) = ?', actors.size) # all of them
