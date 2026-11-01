@@ -1,0 +1,51 @@
+app/presenters/page_presenter.rb
+  h_3633b6af39cc3f 1-2,3-10,12-18,21,25-27,29,31-36,37
+  s_fe25fc31b61599::t_fb5e279d15167c 22
+  s_fe25fc31b61599::t_9f128a2b2a9856 19-20
+  s_4ef8ef590f53b5::t_64bd50ce8d98d5 23
+  s_fe25fc31b61599::t_a426e146baa8c5 24
+  s_fe25fc31b61599::t_dd84507de1613f 30
+  s_fe25fc31b61599::t_d91b4725bd5eb9 11
+  s_fe25fc31b61599::t_2866d6ac65f30b 28
+  h_3633b6af39cc3f 1-2,37
+app/views/pageable/application/index.turbo_stream.slim
+  h_3633b6af39cc3f 1
+app/controllers/concerns/pageable.rb
+  h_3633b6af39cc3f 31-32,53,54-55,56,59
+  h_3633b6af39cc3f 54-55,59
+app/views/pageable/application/_collection.slim
+  h_3633b6af39cc3f 1,5
+app/views/pageable/paginator/_next.slim
+  h_3633b6af39cc3f 1
+app/views/pageable/paginator/_previous.slim
+  h_3633b6af39cc3f 1
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "c283992f53040b43948d244153576ece5ce64203",
+  "prompts": {},
+  "humans": {
+    "h_3633b6af39cc3f": {
+      "author": "Alexander Senko <Alexander.Senko@gmail.com>"
+    }
+  },
+  "sessions": {
+    "s_4ef8ef590f53b5": {
+      "agent_id": {
+        "tool": "github-copilot-jetbrains",
+        "id": "1793091834678",
+        "model": "unknown"
+      },
+      "human_author": null
+    },
+    "s_fe25fc31b61599": {
+      "agent_id": {
+        "tool": "github-copilot-jetbrains",
+        "id": "1792926681261",
+        "model": "unknown"
+      },
+      "human_author": "Alexander Senko <Alexander.Senko@gmail.com>"
+    }
+  }
+}
