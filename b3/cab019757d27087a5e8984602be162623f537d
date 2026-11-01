@@ -1,0 +1,34 @@
+lib/inherited_resources/persistence.rb
+  s_430f5c13c1cbf0::t_0dad5bcff9c125 1-2
+  s_430f5c13c1cbf0::t_52af37a436ff58 3-5
+app/controllers/concerns/inherited_resources/decoratable.rb
+  s_430f5c13c1cbf0::t_833391894779c0 1-2
+  s_430f5c13c1cbf0::t_d96b4fad68bf6f 3-5
+app/responders/coniverse/application_responder.rb
+  s_430f5c13c1cbf0::t_ed30ed7a940eb3 1-2
+  s_430f5c13c1cbf0::t_cf50e48cf076ca 3-5
+lib/inherited_resources/naming.rb
+  s_430f5c13c1cbf0::t_ebd9aa6fee5fae 1-2
+  s_430f5c13c1cbf0::t_627fc2f0a0607a 3-5
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "b3cab019757d27087a5e8984602be162623f537d",
+  "prompts": {},
+  "humans": {
+    "h_3633b6af39cc3f": {
+      "author": "Alexander Senko <Alexander.Senko@gmail.com>"
+    }
+  },
+  "sessions": {
+    "s_430f5c13c1cbf0": {
+      "agent_id": {
+        "tool": "github-copilot-jetbrains",
+        "id": "1793527217560",
+        "model": "unknown"
+      },
+      "human_author": "Alexander Senko <Alexander.Senko@gmail.com>"
+    }
+  }
+}
