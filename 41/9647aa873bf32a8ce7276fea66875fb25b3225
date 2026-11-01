@@ -1,0 +1,14 @@
+app/controllers/concerns/pageable.rb
+  h_3633b6af39cc3f 96,120,146,171-172
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "419647aa873bf32a8ce7276fea66875fb25b3225",
+  "prompts": {},
+  "humans": {
+    "h_3633b6af39cc3f": {
+      "author": "Alexander Senko <Alexander.Senko@gmail.com>"
+    }
+  }
+}
