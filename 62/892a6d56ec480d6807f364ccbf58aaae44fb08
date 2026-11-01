@@ -1,0 +1,24 @@
+spec/requests/coniverse/messages_spec.rb
+  s_888ad1d8714f3e::t_bf78ec399c8dea 1-2,14
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "62892a6d56ec480d6807f364ccbf58aaae44fb08",
+  "prompts": {},
+  "humans": {
+    "h_3633b6af39cc3f": {
+      "author": "Alexander Senko <Alexander.Senko@gmail.com>"
+    }
+  },
+  "sessions": {
+    "s_888ad1d8714f3e": {
+      "agent_id": {
+        "tool": "github-copilot-cli",
+        "id": "8366f24b-dc53-4436-9321-b9daa3513a79",
+        "model": "unknown"
+      },
+      "human_author": "Alexander Senko <Alexander.Senko@gmail.com>"
+    }
+  }
+}
