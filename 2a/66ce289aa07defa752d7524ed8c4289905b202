@@ -1,0 +1,20 @@
+app/presenters/active_support/time_with_zone_presenter.rb
+  s_430f5c13c1cbf0::t_2b0370cf4de5f4 1-2
+  s_430f5c13c1cbf0::t_7cc7a96815f3b9 3-5
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "2a66ce289aa07defa752d7524ed8c4289905b202",
+  "prompts": {},
+  "sessions": {
+    "s_430f5c13c1cbf0": {
+      "agent_id": {
+        "tool": "github-copilot-jetbrains",
+        "id": "1793527217560",
+        "model": "unknown"
+      },
+      "human_author": "Alexander Senko <Alexander.Senko@gmail.com>"
+    }
+  }
+}
