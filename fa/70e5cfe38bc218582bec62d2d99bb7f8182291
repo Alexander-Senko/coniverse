@@ -1,0 +1,20 @@
+config/initializers/generators.rb
+  s_430f5c13c1cbf0::t_ff3d06928289be 1-2
+  s_430f5c13c1cbf0::t_e9ea0b2078a74c 3-5
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "fa70e5cfe38bc218582bec62d2d99bb7f8182291",
+  "prompts": {},
+  "sessions": {
+    "s_430f5c13c1cbf0": {
+      "agent_id": {
+        "tool": "github-copilot-jetbrains",
+        "id": "1793527217560",
+        "model": "unknown"
+      },
+      "human_author": "Alexander Senko <Alexander.Senko@gmail.com>"
+    }
+  }
+}
