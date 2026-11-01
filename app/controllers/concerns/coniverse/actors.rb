@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module Coniverse # :nodoc:
+module Coniverse
 	# = Actors controller concern
 	#
 	# This concern is used to set the current actor for the request.
@@ -16,7 +16,7 @@ module Coniverse # :nodoc:
 
 		def actor_id
 			[ # lookup
-					params[:actor_id],
+					params[:actor_id], # rubocop:disable Rails/StrongParametersExpect
 					cookies.signed[:actor_id],
 			].find &:present?
 		end

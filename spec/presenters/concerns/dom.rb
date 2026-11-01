@@ -9,7 +9,7 @@ RSpec.shared_context 'DOM builder' do
 	describe '#tag' do
 		let(:tag_name) { 'tag' }
 
-		it 'renders a tag with default attributes' do
+		it 'renders a tag with default attributes' do # rubocop:disable RSpec/MultipleExpectations
 			expect(subject.call { concat content })
 					.to have_tag("#{decorated.send :tag_name}##{decorated.dom_id}") do |tags|
 						tag = tags.sole
@@ -23,7 +23,7 @@ RSpec.shared_context 'DOM builder' do
 					end
 		end
 
-		it 'renders a tag with extra classes' do
+		it 'renders a tag with extra classes' do # rubocop:disable RSpec/MultipleExpectations
 			expect(subject.call(class: classes) { concat content })
 					.to have_tag("#{decorated.send :tag_name}##{decorated.dom_id}") do |tags|
 						tag = tags.sole
@@ -37,7 +37,7 @@ RSpec.shared_context 'DOM builder' do
 					end
 		end
 
-		it 'renders a tag with a specific name' do
+		it 'renders a tag with a specific name' do # rubocop:disable RSpec/MultipleExpectations
 			expect(subject.call(tag_name) { concat content })
 					.to have_tag("#{tag_name}##{decorated.dom_id}") do |tags|
 						tag = tags.sole

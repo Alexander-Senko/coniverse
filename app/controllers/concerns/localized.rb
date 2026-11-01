@@ -19,8 +19,8 @@ concern :Localized do
 
 	memoize def locale
 		[ # sources
-				params[:locale],
-				request.env['rack.locale'],
+				*params[:locale], # rubocop:disable Rails/StrongParametersExpect
+				*request.env['rack.locale'],
 				I18n.locale,
 		]
 				.find { I18n.locale_available? it }

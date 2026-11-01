@@ -1,5 +1,13 @@
 # frozen_string_literal: true
 
+# Enhanced table view for expressions
+#
+# rubocop:disable Layout/SpaceAroundMethodCallOperator
+#
+# Multiline list items
+#
+# rubocop:disable Style/RedundantParentheses
+
 require 'delegate'
 require 'baby_squeel'
 
@@ -92,7 +100,7 @@ concern :Pageable do
 					),
 
 					**settings,
-			})
+			}) # rubocop:disable Layout
 		end
 
 		# Shared settings preserved across pagination turns.
@@ -152,7 +160,7 @@ concern :Pageable do
 	end
 
 	memoize def collection
-		return super unless page
+		return super unless page # rubocop:disable Layout
 
 		page.of super
 	end, condition: -> { page }

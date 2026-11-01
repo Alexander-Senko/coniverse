@@ -16,11 +16,9 @@ RSpec.shared_context :pageable do
 	end
 
 	shared_context 'not paginated' do
-		let(:params) { {} }
-
-		if (defaults = described_class.page)
-			let(:page_size) { defaults[:size] }
-		end
+		cattr_reader(:defaults) { described_class.page }
+		let(:page_size)         { defaults[:size] } if defaults
+		let(:params)            { {} }
 	end
 
 	shared_context 'paginated' do
@@ -29,7 +27,7 @@ RSpec.shared_context :pageable do
 
 	describe '#page' do
 		it_behaves_like 'not paginated' do
-			if (defaults = described_class.page)
+			if defaults
 				its_result { is_expected.to be_a Page }
 				its_result { is_expected.to have_attributes defaults }
 			else
@@ -45,7 +43,7 @@ RSpec.shared_context :pageable do
 
 	describe '#collection' do
 		it_behaves_like 'not paginated' do
-			if (defaults = described_class.page)
+			if defaults
 				its_result { is_expected.to eq records.last(page_size) }
 			else
 				its_result { is_expected.to eq records.all }

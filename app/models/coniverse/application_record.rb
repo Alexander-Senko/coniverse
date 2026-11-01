@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Coniverse
 	class ApplicationRecord < ActiveRecord::Base
 		using UUID

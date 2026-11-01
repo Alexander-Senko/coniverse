@@ -3,7 +3,7 @@
 module Coniverse
 	class MessagePresenter < ApplicationPresenter
 		def heading
-			return unless title.present?
+			return if title.blank?
 
 			link
 					.tap { yield it if block_given? }
@@ -13,6 +13,7 @@ module Coniverse
 		def updated = updated_at.tag class: 'updated'
 
 		def children(&)
+			# rubocop:disable-next Layout
 			turbo_frame_tag(:messages, src: messages_path, **{
 					class: 'messages',
 			}, &) if messages.any?
@@ -36,7 +37,7 @@ module Coniverse
 		def messages_path(**)
 			message_messages_path(self,
 					page: h.page&.settings,
-			**)
+			**) # rubocop:disable Layout
 		end
 	end
 end

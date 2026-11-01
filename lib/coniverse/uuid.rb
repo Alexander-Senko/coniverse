@@ -45,10 +45,6 @@ module Coniverse
 		end
 
 		# Runs the block with this module's UUID as the current namespace.
-		def within_uuid_namespace
-			Current.set namespace: uuid do
-				yield
-			end
-		end
+		def within_uuid_namespace(&) = Current.set(namespace: uuid, &)
 	end
 end

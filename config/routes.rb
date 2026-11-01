@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 Coniverse::Engine.routes.draw do
 	resources :messages do
 		resources :messages

@@ -1,5 +1,10 @@
 # frozen_string_literal: true
 
+# Multiline list items
+#
+# rubocop:disable Style/RedundantParentheses
+# rubocop:disable Style/RedundantSelf
+
 module Coniverse
 	module DOM
 		# = Enumerable DOM presenter concern

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class CreateConiverseMessages < ActiveRecord::Migration[7.1]
 	def change
 		create_table :coniverse_messages, id: :uuid do |t|

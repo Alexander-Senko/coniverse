@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+# rubocop:disable Metrics
+
 ActiveSupport.on_load :active_record do
 	ActiveRecord::Validations.class_methods do
 		# Adds support for false values to remove previously defined
@@ -9,7 +11,7 @@ ActiveSupport.on_load :active_record do
 		# an ancestor class.
 		#
 		# HACK: this monkey patch may break in future versions of Rails.
-		def validates *attributes # HACK
+		def validates *attributes
 			defaults    = attributes.extract_options!.dup
 			validations = defaults.slice! *_validates_default_keys
 

@@ -4,8 +4,8 @@ class ActiveSupport::TimeWithZonePresenter < Magic::Presenter::Base
 	def tag(**)
 		time_tag(self,
 				lang: I18n.locale,
-		**) do
-			render inline: <<~SLIM, type: :slim, locals: { time: self }
+		**) do # rubocop:disable Layout
+			render inline: <<~SLIM, type: :slim, locals: { time: self } # rubocop:disable Rails/RenderInline
 				span.year< = time.year
 				span.date< = time.date
 				span.time< = time.time

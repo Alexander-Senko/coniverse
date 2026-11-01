@@ -1,14 +1,16 @@
-source "https://rubygems.org"
+# frozen_string_literal: true
+
+source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 # Specify your gem's dependencies in coniverse.gemspec.
 gemspec
 
-gem "puma"
+gem 'puma'
 
-gem "pg"
+gem 'pg'
 
-gem "sprockets-rails"
+gem 'sprockets-rails'
 
 group :test do
 	gem 'rspec-rails'
@@ -17,6 +19,11 @@ group :test do
 end
 
 group :development do
+	gem 'rubocop-rails',       require: false
+	gem 'rubocop-rspec',       require: false
+	gem 'rubocop-rspec_rails', require: false
+	gem 'brakeman',            require: false
+
 	gem 'rbs', require: false
 end
 

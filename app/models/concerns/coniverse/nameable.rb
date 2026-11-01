@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module Coniverse # :nodoc:
+module Coniverse
 	# = Nameable model concern
 	#
 	# This concern is used to add translatable names to models.

@@ -1,5 +1,9 @@
 # frozen_string_literal: true
 
+# Enhanced nested method chains
+#
+# rubocop:disable Layout/MultilineMethodCallIndentation
+
 require 'rails_helper'
 
 module Coniverse

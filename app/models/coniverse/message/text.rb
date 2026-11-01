@@ -8,7 +8,7 @@ module Coniverse
 		class Text < self
 			self.content_type = 'text/plain'
 
-			content_types.concat %w[
+			content_types.push *%w[
 					text/markdown
 			]
 

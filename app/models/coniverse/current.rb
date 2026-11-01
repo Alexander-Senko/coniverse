@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module Coniverse
-	class Current < ActiveSupport::CurrentAttributes # :nodoc:
+	class Current < ActiveSupport::CurrentAttributes
 		attribute :actor
 
 		def actors

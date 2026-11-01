@@ -1,5 +1,9 @@
 # frozen_string_literal: true
 
+# Multiline list items
+#
+# rubocop:disable Style/RedundantParentheses
+
 module Coniverse
 	concern :DOM do
 		included do
@@ -46,7 +50,8 @@ module Coniverse
 			end
 		end
 
-		def tag name = tag_name, **options, &block
+		def tag(name = tag_name, **options, &)
+			# rubocop:disable-next Layout
 			h.tag.public_send(name,
 					id: dom_id,
 
@@ -58,7 +63,7 @@ module Coniverse
 					**({ lang: } if
 							respond_to? :lang
 					),
-			**options, &block)
+			**options, &)
 		end
 
 		private
