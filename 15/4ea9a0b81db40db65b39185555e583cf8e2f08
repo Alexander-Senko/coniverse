@@ -1,0 +1,47 @@
+app/presenters/concerns/linkable.rb
+  h_3633b6af39cc3f 17
+app/controllers/concerns/pageable.rb
+  s_430f5c13c1cbf0::t_93d77f8b94a763 3-6,8
+  s_430f5c13c1cbf0::t_49d634bd44a089 9
+  s_430f5c13c1cbf0::t_cee4765d96e115 7
+  s_430f5c13c1cbf0::t_894914f95b0dcb 10
+  h_3633b6af39cc3f 103,163
+app/controllers/concerns/coniverse/actors.rb
+  h_3633b6af39cc3f 19
+spec/helpers/coniverse/application_helper_spec.rb
+  h_3633b6af39cc3f 10
+app/helpers/coniverse/application_helper.rb
+  s_430f5c13c1cbf0::t_d2bfebdd060150 3-5
+  h_3633b6af39cc3f 6,11,25
+db/seeds.rb
+  h_3633b6af39cc3f 1-2
+app/controllers/concerns/localized.rb
+  s_430f5c13c1cbf0::t_28e1e952aa029d 22
+  h_3633b6af39cc3f 23
+app/presenters/concerns/coniverse/dom/enumerable.rb
+  s_430f5c13c1cbf0::t_3c5f180586ac63 6
+  s_430f5c13c1cbf0::t_d2cbd9010ce771 3-5,7
+db/migrate/01_create_coniverse_messages.rb
+  s_430f5c13c1cbf0::t_e373cbcb4a8b44 1-2
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "154ea9a0b81db40db65b39185555e583cf8e2f08",
+  "prompts": {},
+  "humans": {
+    "h_3633b6af39cc3f": {
+      "author": "Alexander Senko <Alexander.Senko@gmail.com>"
+    }
+  },
+  "sessions": {
+    "s_430f5c13c1cbf0": {
+      "agent_id": {
+        "tool": "github-copilot-jetbrains",
+        "id": "1793527217560",
+        "model": "unknown"
+      },
+      "human_author": "Alexander Senko <Alexander.Senko@gmail.com>"
+    }
+  }
+}
