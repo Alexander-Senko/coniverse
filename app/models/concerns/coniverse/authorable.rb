@@ -3,6 +3,9 @@
 # rubocop:disable Rails/Delegate
 
 module Coniverse
+	# = Authorable model concern
+	#
+	# Registers record’s author and editors automatically.
 	concern :Authorable do
 		included do
 			after_create(if: :actor) { authored_by! actor } if method_defined? :authored_by!

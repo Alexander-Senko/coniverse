@@ -1,13 +1,19 @@
 # frozen_string_literal: true
 
 module Coniverse
+	# = Flagable presenter concern
+	#
+	# Provides boolean flag helpers.
 	concern :Flagable do
+		# Adds flags
 		def dom_class = Set[
 				*(super if defined? super),
 
 				*flags,
 		]
 
+		# Returns all the flags detected, based on:
+		# * public instance methods
 		def flags = Set[
 				*(flag_methods
 						.select(&:call)
