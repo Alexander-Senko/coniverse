@@ -61,7 +61,7 @@ spec/controllers/concerns/pageable.rb
 lib/coniverse/uuid.rb
   h_3633b6af39cc3f 48
 spec/dummy/app/channels/application_cable/channel.rb
-  h_3633b6af39cc3f 1-2
+  h_3633b6af39cc3f 1-2,4-5
   h_3633b6af39cc3f 4-5
 config/initializers/models/validations.rb
   s_430f5c13c1cbf0::t_bd030739ed7e3a 14
@@ -83,7 +83,7 @@ spec/dummy/Rakefile
 lib/tasks/coniverse_tasks.rake
   s_430f5c13c1cbf0::t_a4fe7661170d18 1-2
 spec/dummy/app/channels/application_cable/connection.rb
-  h_3633b6af39cc3f 1-2
+  h_3633b6af39cc3f 1-2,4-5
   h_3633b6af39cc3f 4-5
 spec/dummy/config.ru
   h_3633b6af39cc3f 1-2,5
