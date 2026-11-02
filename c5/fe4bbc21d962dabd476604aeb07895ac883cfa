@@ -1,0 +1,24 @@
+app/models/concerns/coniverse/nameable.rb
+  h_3633b6af39cc3f 3
+app/presenters/concerns/coniverse/dom.rb
+  h_3633b6af39cc3f 7
+.rubocop.yml
+  h_3633b6af39cc3f 17-20
+app/models/concerns/coniverse/authorable.rb
+  h_3633b6af39cc3f 5
+app/controllers/concerns/coniverse/actors.rb
+  h_3633b6af39cc3f 3
+app/models/coniverse/current.rb
+  h_3633b6af39cc3f 4
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "c5fe4bbc21d962dabd476604aeb07895ac883cfa",
+  "prompts": {},
+  "humans": {
+    "h_3633b6af39cc3f": {
+      "author": "Alexander Senko <Alexander.Senko@gmail.com>"
+    }
+  }
+}
