@@ -1,0 +1,16 @@
+coniverse.gemspec
+  h_3633b6af39cc3f 10-12
+lib/coniverse/authors.rb
+  h_3633b6af39cc3f 3,6-11
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "f7e9a5e71df62375440c3903dcd1487768a6dc08",
+  "prompts": {},
+  "humans": {
+    "h_3633b6af39cc3f": {
+      "author": "Alexander Senko <Alexander.Senko@gmail.com>"
+    }
+  }
+}

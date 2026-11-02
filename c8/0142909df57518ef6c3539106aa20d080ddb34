@@ -1,0 +1,38 @@
+lib/coniverse/authors.rb
+  h_3633b6af39cc3f 3-7,10,11-13,14-15
+  h_3633b6af39cc3f 11-13
+coniverse.gemspec
+  h_3633b6af39cc3f 10-12
+Gemfile
+  h_3633b6af39cc3f 28
+.gitmodules
+  h_3633b6af39cc3f 1-3
+vendor/gems/rubygems-author
+  h_3633b6af39cc3f 1
+app/models/coniverse/message/text.rb
+  h_3633b6af39cc3f 11
+app/presenters/active_support/time_with_zone_presenter.rb
+  s_430f5c13c1cbf0::t_f54a0fcdc6615f 8
+  s_430f5c13c1cbf0::t_78df6e3335166b 7
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "c80142909df57518ef6c3539106aa20d080ddb34",
+  "prompts": {},
+  "humans": {
+    "h_3633b6af39cc3f": {
+      "author": "Alexander Senko <Alexander.Senko@gmail.com>"
+    }
+  },
+  "sessions": {
+    "s_430f5c13c1cbf0": {
+      "agent_id": {
+        "tool": "github-copilot-jetbrains",
+        "id": "1793527217560",
+        "model": "unknown"
+      },
+      "human_author": "Alexander Senko <Alexander.Senko@gmail.com>"
+    }
+  }
+}
