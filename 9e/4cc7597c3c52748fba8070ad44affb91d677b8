@@ -1,0 +1,81 @@
+app/presenters/concerns/coniverse/dom.rb
+  s_430f5c13c1cbf0::t_d03c8cdc88f017 7
+  s_430f5c13c1cbf0::t_1bc54d4917f73e 3-6
+  h_3633b6af39cc3f 8-10,54
+spec/spec_helper.rb
+  s_430f5c13c1cbf0::t_2f523877d813fc 11
+app/presenters/active_support/time_with_zone_presenter.rb
+  h_3633b6af39cc3f 7
+app/presenters/coniverse/message_presenter.rb
+  s_430f5c13c1cbf0::t_afad06584218b2 40
+  h_3633b6af39cc3f 16
+app/presenters/page_presenter.rb
+  h_3633b6af39cc3f 28
+Rakefile
+  s_430f5c13c1cbf0::t_b4e8107b2b9d05 9
+  s_430f5c13c1cbf0::t_902772a9012fdc 1
+  h_3633b6af39cc3f 3,5-6,10
+  s_430f5c13c1cbf0::t_8bae6669dc840f 8
+spec/controllers/concerns/pageable.rb
+  h_3633b6af39cc3f 19-21
+  s_430f5c13c1cbf0::t_8a592c5a51573e 30,46
+lib/coniverse/uuid.rb
+  h_3633b6af39cc3f 48
+spec/dummy/app/channels/application_cable/channel.rb
+  h_3633b6af39cc3f 1-2
+  h_3633b6af39cc3f 4-5
+config/initializers/models/validations.rb
+  s_430f5c13c1cbf0::t_bd030739ed7e3a 14
+  s_430f5c13c1cbf0::t_e6dcf65a4194e3 3
+  h_3633b6af39cc3f 4
+spec/requests/coniverse/actors_spec.rb
+  s_430f5c13c1cbf0::t_88df98a37e94fa 3-6
+app/models/concerns/coniverse/authorable.rb
+  s_430f5c13c1cbf0::t_05d23fd1d44a56 3
+  h_3633b6af39cc3f 4
+spec/presenters/concerns/dom.rb
+  s_430f5c13c1cbf0::t_4eba4b83da9a87 26
+  s_430f5c13c1cbf0::t_bc9639785b398a 40
+  s_430f5c13c1cbf0::t_86ab8456354368 12
+app/models/coniverse/conversation.rb
+  s_430f5c13c1cbf0::t_0ebbde0bd73c29 24
+spec/dummy/Rakefile
+  h_3633b6af39cc3f 1-2,6
+lib/tasks/coniverse_tasks.rake
+  s_430f5c13c1cbf0::t_a4fe7661170d18 1-2
+spec/dummy/app/channels/application_cable/connection.rb
+  h_3633b6af39cc3f 1-2
+  h_3633b6af39cc3f 4-5
+spec/dummy/config.ru
+  h_3633b6af39cc3f 1-2,5
+spec/models/concerns/coniverse/authorable.rb
+  s_430f5c13c1cbf0::t_7915a2a33e8be8 18
+  s_430f5c13c1cbf0::t_a8ba5858da5d3b 17
+  s_430f5c13c1cbf0::t_17e07a2d4180b9 3-6
+spec/presenters/concerns/linkable.rb
+  s_430f5c13c1cbf0::t_f2065932f83ddb 71
+  s_430f5c13c1cbf0::t_500e56e8b16864 55
+app/presenters/concerns/coniverse/flagable.rb
+  h_3633b6af39cc3f 17,41
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "9e4cc7597c3c52748fba8070ad44affb91d677b8",
+  "prompts": {},
+  "humans": {
+    "h_3633b6af39cc3f": {
+      "author": "Alexander Senko <Alexander.Senko@gmail.com>"
+    }
+  },
+  "sessions": {
+    "s_430f5c13c1cbf0": {
+      "agent_id": {
+        "tool": "github-copilot-jetbrains",
+        "id": "1793527217560",
+        "model": "unknown"
+      },
+      "human_author": "Alexander Senko <Alexander.Senko@gmail.com>"
+    }
+  }
+}
