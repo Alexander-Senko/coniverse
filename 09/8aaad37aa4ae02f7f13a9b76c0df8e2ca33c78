@@ -1,0 +1,32 @@
+app/presenters/concerns/coniverse/flagable.rb
+  h_3633b6af39cc3f 8,17-18
+  s_430f5c13c1cbf0::t_c6e249568ef37d 4-6
+lib/coniverse.rb
+  s_430f5c13c1cbf0::t_4e0613aa99ac78 6-12
+app/presenters/concerns/coniverse/dom.rb
+  s_430f5c13c1cbf0::t_63b172b87ba04d 8-10
+app/models/concerns/coniverse/authorable.rb
+  h_3633b6af39cc3f 8
+  h_3633b6af39cc3f 6-7
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "098aaad37aa4ae02f7f13a9b76c0df8e2ca33c78",
+  "prompts": {},
+  "humans": {
+    "h_3633b6af39cc3f": {
+      "author": "Alexander Senko <Alexander.Senko@gmail.com>"
+    }
+  },
+  "sessions": {
+    "s_430f5c13c1cbf0": {
+      "agent_id": {
+        "tool": "github-copilot-jetbrains",
+        "id": "1793527217560",
+        "model": "unknown"
+      },
+      "human_author": "Alexander Senko <Alexander.Senko@gmail.com>"
+    }
+  }
+}
