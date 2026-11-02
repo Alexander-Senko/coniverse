@@ -17,7 +17,7 @@ require 'baby_squeel'
 #
 # It is designed to work with collections that may change while
 # paginating. Thus, we may not use the `offset` parameter for
-# pagination, as it may lead to missing or duplicate records. That's
+# pagination, as it may lead to missing or duplicate records. That’s
 # why we use the `before` and `after` parameters, which are based on
 # the immutable `created_at` timestamp.
 #
@@ -41,7 +41,7 @@ concern :Pageable do
 	class Page < Delegator
 		include Magic::Presentable
 
-		# Builds a page from the controller's `page` parameters or a settings hash.
+		# Builds a page from the controller’s `page` parameters or a settings hash.
 		def initialize params
 			@params =
 					case params

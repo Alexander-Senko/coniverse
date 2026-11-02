@@ -5,6 +5,9 @@
 # rubocop:disable Style/RedundantParentheses
 
 module Coniverse
+	# = DOM presenter concern
+	#
+	# Provides HTML DOM helpers.
 	concern :DOM do
 		included do
 			collection_presenter do
