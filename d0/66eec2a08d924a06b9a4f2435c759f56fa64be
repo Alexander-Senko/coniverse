@@ -89,7 +89,7 @@ spec/presenters/coniverse/message/html_presenter_spec.rb
 spec/presenters/coniverse/actor_presenter_spec.rb
   h_3633b6af39cc3f 13
 app/presenters/concerns/coniverse/flagable.rb
-  h_3633b6af39cc3f 9,17
+  h_3633b6af39cc3f 9,10,12-13,17,18-19,21-26
   h_3633b6af39cc3f 10,12-13,18-19,21-26
 spec/presenters/coniverse/message/text_presenter_spec.rb
   h_3633b6af39cc3f 16
