@@ -1,0 +1,14 @@
+app/presenters/coniverse/conversation_presenter.rb
+  h_3633b6af39cc3f 5-6,8-13
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "fbe240cdce58cb31ba71224d1b877e5e6436ef82",
+  "prompts": {},
+  "humans": {
+    "h_3633b6af39cc3f": {
+      "author": "Alexander Senko <Alexander.Senko@gmail.com>"
+    }
+  }
+}
