@@ -1,0 +1,8 @@
+module Coniverse
+	class Actor < ApplicationRecord
+		include Nameable
+
+		def current?:   -> bool
+		def available?: -> bool
+	end
+end

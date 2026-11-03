@@ -1,0 +1,7 @@
+module Coniverse
+	module ApplicationHelper
+		def title: -> String
+
+		def render_if_exists: (String path) -> ActiveSupport::SafeBuffer?
+	end
+end

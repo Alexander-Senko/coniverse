@@ -11,7 +11,7 @@ require 'active_support/core_ext/string/inflections'
 # rubocop:disable-next Style/TrailingCommaInArguments
 ENV['RBS_TEST_TARGET'] ||= %w[
 		Coniverse::*
-].concat(Pathname('sig').glob('*.rbs')
+].concat(Pathname('sig').glob('{*/concerns/,}*.rbs')
 		.map { it.basename.sub_ext '' }
 		.map { it.to_s.camelize }
 ) * ','

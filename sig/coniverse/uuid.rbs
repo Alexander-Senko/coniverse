@@ -1,0 +1,11 @@
+module Coniverse
+	module UUID
+		class Current < ActiveSupport::CurrentAttributes
+			attr_accessor namespace: String?
+
+			def available?: -> bool
+		end
+
+		def within_uuid_namespace: [T] { () -> T } -> T
+	end
+end

@@ -1,0 +1,4 @@
+module Coniverse
+	class ConversationPresenter < Message::HTMLPresenter
+	end
+end

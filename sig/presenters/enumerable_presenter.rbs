@@ -1,0 +1,11 @@
+class EnumerablePresenter < Magic::Presenter::Base
+	include Coniverse::DOM::Enumerable
+
+	def self.model_class: -> nil
+
+	def model_class: -> Class
+
+	private
+
+	def common_ancestors: -> Array[Class]
+end

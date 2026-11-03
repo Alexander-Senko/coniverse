@@ -1,0 +1,12 @@
+class PagePresenter < Magic::Presenter::Base
+	def previous_tag: ?{ (*untyped) -> void } -> ActiveSupport::SafeBuffer
+	def next_tag:     ?{ (*untyped) -> void } -> ActiveSupport::SafeBuffer
+	def turbo_stream: ?{ (*untyped) -> void } -> ActiveSupport::SafeBuffer
+
+	private
+
+	def previous?: -> bool
+	def next?:     -> bool
+
+	def load_page_tag: (Symbol direction) ?{ (*untyped) -> void } -> ActiveSupport::SafeBuffer
+end
