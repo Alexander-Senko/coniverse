@@ -1,0 +1,35 @@
+spec/presenters/coniverse/message_presenter_spec.rb
+  h_3633b6af39cc3f 72
+spec/presenters/coniverse/message/html_presenter_spec.rb
+  h_3633b6af39cc3f 16
+spec/presenters/coniverse/actor_presenter_spec.rb
+  h_3633b6af39cc3f 13
+app/presenters/concerns/coniverse/flagable.rb
+  h_3633b6af39cc3f 9,17,20
+  h_3633b6af39cc3f 10,12-13,18-19,21-26
+spec/presenters/coniverse/message/text_presenter_spec.rb
+  h_3633b6af39cc3f 16
+spec/presenters/coniverse/conversation_presenter_spec.rb
+  s_1d28522987abc7::t_151b7452d34d3a 38
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "ed5b6466cfb410c846d4f74fbbedce34fdeb335a",
+  "prompts": {},
+  "humans": {
+    "h_3633b6af39cc3f": {
+      "author": "Alexander Senko <Alexander.Senko@gmail.com>"
+    }
+  },
+  "sessions": {
+    "s_1d28522987abc7": {
+      "agent_id": {
+        "tool": "github-copilot-jetbrains",
+        "id": "1793709766208",
+        "model": "unknown"
+      },
+      "human_author": "Alexander Senko <Alexander.Senko@gmail.com>"
+    }
+  }
+}
