@@ -1,0 +1,15 @@
+module Coniverse
+	module Nameable : _NameMessages
+		def name:           -> String?
+		def name=: (String) -> String
+
+		def names: -> Array[String]
+
+		def name_message:  -> Message::Text?
+		def name_messages: -> ActiveRecord::Relation
+	end
+
+	interface _NameMessages
+		def name_text_messages: -> ActiveRecord::Relation
+	end
+end

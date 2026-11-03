@@ -1,0 +1,15 @@
+module Coniverse
+	class MessagePresenter < ApplicationPresenter
+		def heading: ?{ (*untyped) -> void } -> ActiveSupport::SafeBuffer?
+
+		def created: -> ActiveSupport::SafeBuffer
+		def updated: -> ActiveSupport::SafeBuffer
+
+		def children: { (*untyped) -> void } -> ActiveSupport::SafeBuffer?
+
+		def flat?: -> bool?
+		def tree?: -> bool?
+
+		def messages_path: (**untyped) -> String
+	end
+end

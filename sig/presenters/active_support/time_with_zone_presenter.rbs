@@ -1,0 +1,8 @@
+module ActiveSupport
+	class TimeWithZonePresenter < Magic::Presenter::Base
+		def tag: (**untyped) -> ActiveSupport::SafeBuffer
+
+		def time: -> String
+		def date: -> String
+	end
+end

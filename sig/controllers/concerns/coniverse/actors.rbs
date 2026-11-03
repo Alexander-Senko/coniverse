@@ -1,0 +1,9 @@
+module Coniverse
+	module Actors
+		private
+
+		def actor_id: -> String?
+
+		def set_current_actor: -> void
+	end
+end

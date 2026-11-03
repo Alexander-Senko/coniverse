@@ -1,0 +1,17 @@
+module Coniverse
+	module DOM
+		module ClassMethods
+			def dom_class: -> Set[String]
+		end
+
+		def dom_class: -> Set[String]
+
+		def dom_id: -> String?
+
+		def tag: (?interned name, **untyped) ?{ (*untyped) -> void } -> ActiveSupport::SafeBuffer
+
+		private
+
+		def tag_name: -> interned
+	end
+end

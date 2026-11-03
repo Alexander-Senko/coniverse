@@ -1,0 +1,7 @@
+module Coniverse
+	class Engine < Rails::Engine
+		def self.title: -> String
+
+		def self.local_method?: (Method) -> bool?
+	end
+end

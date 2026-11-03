@@ -1,0 +1,6 @@
+module Coniverse
+	class Message::HTML < Message::Text
+		def body:  -> ActionText::RichText
+		def media: -> Array[ActionText::Attachment]
+	end
+end

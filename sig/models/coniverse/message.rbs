@@ -1,0 +1,14 @@
+module Coniverse
+	class Message < ApplicationRecord
+		include Content
+		include Localizable
+		include Authorable
+
+		# Scopes
+		def self.independent: -> ActiveRecord::Relation
+
+		def body:         -> String?
+		def title:        -> String?
+		def content_type: -> String?
+	end
+end

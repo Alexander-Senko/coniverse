@@ -1,0 +1,10 @@
+module Coniverse
+	class Conversation < Message::HTML
+		# Scopes
+		def self.between: (     *Actor ) -> ActiveRecord::Relation
+				|             (Array[Actor]) -> ActiveRecord::Relation
+
+		def text: -> String?
+		def body: -> ActionText::RichText?
+	end
+end

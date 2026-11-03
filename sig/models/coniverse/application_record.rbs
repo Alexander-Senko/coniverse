@@ -1,0 +1,4 @@
+module Coniverse
+	class ApplicationRecord < ActiveRecord::Base
+	end
+end

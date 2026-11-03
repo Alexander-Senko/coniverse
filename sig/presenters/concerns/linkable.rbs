@@ -1,0 +1,11 @@
+module Linkable
+	def url: -> (URI | String)
+
+	def link: (**untyped) ?{ (*untyped) -> void } -> ActiveSupport::SafeBuffer
+
+	def current_page?: -> bool
+
+	private
+
+	def link_text: -> String?
+end

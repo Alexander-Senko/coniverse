@@ -1,0 +1,15 @@
+module Coniverse
+	module Authorable : _Authors, _Editors
+		def actor: -> Actor?
+	end
+
+	interface _Authors
+		def authors: -> Array[Actor]
+		def authored_by!: (Actor, *Actor) -> void
+	end
+
+	interface _Editors
+		def editors: -> Array[Actor]
+		def edited_by!: (Actor, *Actor) -> void
+	end
+end

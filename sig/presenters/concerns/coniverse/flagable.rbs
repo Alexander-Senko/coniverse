@@ -1,0 +1,10 @@
+module Coniverse
+	module Flagable
+		def dom_class: -> Set[String]
+		def flags:     -> Set[String]
+
+		private
+
+		def flag_methods: -> Array[Method]
+	end
+end

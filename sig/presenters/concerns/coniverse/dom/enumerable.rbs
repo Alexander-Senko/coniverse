@@ -1,0 +1,7 @@
+module Coniverse
+	module DOM
+		module Enumerable
+			def dom_class: -> Set[String]
+		end
+	end
+end

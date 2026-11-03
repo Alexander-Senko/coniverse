@@ -1,0 +1,19 @@
+module Localizable : _Lang
+	# Scopes
+	def self.for_locale: (?interned) -> ActiveRecord::Relation
+	def self.localized:              -> ActiveRecord::Relation
+	def self.international:          -> ActiveRecord::Relation
+
+	def lang: -> Symbol?
+
+	def localized?:     -> bool
+	def international?: -> bool
+
+	def for_locale: (?Symbol) -> Localizable
+
+	def detect_language!: -> String?
+end
+
+interface _Lang
+	def lang: -> String?
+end

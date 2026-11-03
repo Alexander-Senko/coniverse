@@ -1,0 +1,7 @@
+module Localized
+	private
+
+	def locale: -> Symbol?
+
+	def with_locale: [T] { () -> T } -> T
+end
