@@ -1,0 +1,55 @@
+sig/controllers/concerns/localized.rbs
+  s_1d28522987abc7::t_2df999cf0bd55f 6
+  h_3633b6af39cc3f 1-5,7
+coniverse.gemspec
+  h_3633b6af39cc3f 22
+sig/controllers/concerns/coniverse/actors.rbs
+  h_3633b6af39cc3f 1-9
+sig/coniverse/engine.rbs
+  h_3633b6af39cc3f 1-7
+sig/coniverse/uuid.rbs
+  h_3633b6af39cc3f 1-11
+sig/controllers/concerns/page.rbs
+  s_1d28522987abc7::t_3d099c4dcf30d7 1
+sig/helpers/coniverse/application_helper.rbs
+  h_3633b6af39cc3f 1-7
+sig/models/concerns/coniverse/authorable.rbs
+  h_3633b6af39cc3f 1-15
+sig/models/concerns/coniverse/nameable.rbs
+  h_3633b6af39cc3f 1-15
+sig/models/concerns/localizable.rbs
+  h_3633b6af39cc3f 1-19
+sig/models/coniverse/actor.rbs
+  h_3633b6af39cc3f 1-8
+sig/models/coniverse/application_record.rbs
+  h_3633b6af39cc3f 1-4
+sig/models/coniverse/conversation.rbs
+  h_3633b6af39cc3f 1-10
+sig/models/coniverse/message.rbs
+  h_3633b6af39cc3f 1-14
+sig/models/coniverse/message/html.rbs
+  h_3633b6af39cc3f 1-6
+sig/models/coniverse/message/text.rbs
+  h_3633b6af39cc3f 1-9
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "dc317538b41e3a200167f5d632ab52fe53b99df9",
+  "prompts": {},
+  "humans": {
+    "h_3633b6af39cc3f": {
+      "author": "Alexander Senko <Alexander.Senko@gmail.com>"
+    }
+  },
+  "sessions": {
+    "s_1d28522987abc7": {
+      "agent_id": {
+        "tool": "github-copilot-jetbrains",
+        "id": "1793709766208",
+        "model": "unknown"
+      },
+      "human_author": null
+    }
+  }
+}
