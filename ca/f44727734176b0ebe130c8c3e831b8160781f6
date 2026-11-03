@@ -1,0 +1,20 @@
+app/presenters/concerns/coniverse/dom/enumerable.rb
+  h_3633b6af39cc3f 9,10-12,14-18,19
+  h_3633b6af39cc3f 10-12,14-18
+app/presenters/concerns/coniverse/dom.rb
+  h_3633b6af39cc3f 14,15-16,17-18,19,21-25,27,30,31-36
+  h_3633b6af39cc3f 15-16,19,21-25,27,31-36
+spec/presenters/enumerable_presenter_spec.rb
+  h_3633b6af39cc3f 13
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "caf44727734176b0ebe130c8c3e831b8160781f6",
+  "prompts": {},
+  "humans": {
+    "h_3633b6af39cc3f": {
+      "author": "Alexander Senko <Alexander.Senko@gmail.com>"
+    }
+  }
+}

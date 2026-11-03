@@ -1,0 +1,125 @@
+lib/coniverse/authors.rb
+  h_3633b6af39cc3f 3-7,10,11-13,14-15
+  h_3633b6af39cc3f 11-13
+coniverse.gemspec
+  h_3633b6af39cc3f 10-12
+Gemfile
+  h_3633b6af39cc3f 28
+.gitmodules
+  h_3633b6af39cc3f 1-3
+vendor/gems/rubygems-author
+  h_3633b6af39cc3f 1
+app/models/coniverse/message/text.rb
+  h_3633b6af39cc3f 11
+app/presenters/active_support/time_with_zone_presenter.rb
+  s_430f5c13c1cbf0::t_f54a0fcdc6615f 8
+  h_3633b6af39cc3f 7
+app/presenters/concerns/linkable.rb
+  h_3633b6af39cc3f 17
+app/controllers/concerns/pageable.rb
+  s_430f5c13c1cbf0::t_93d77f8b94a763 3-6,8
+  s_430f5c13c1cbf0::t_49d634bd44a089 9
+  s_430f5c13c1cbf0::t_cee4765d96e115 7
+  s_430f5c13c1cbf0::t_894914f95b0dcb 10
+  h_3633b6af39cc3f 103,163
+app/controllers/concerns/coniverse/actors.rb
+  h_3633b6af39cc3f 3,19
+spec/helpers/coniverse/application_helper_spec.rb
+  h_3633b6af39cc3f 10
+app/helpers/coniverse/application_helper.rb
+  s_430f5c13c1cbf0::t_d2bfebdd060150 3-5
+  h_3633b6af39cc3f 6,11,25
+db/seeds.rb
+  h_3633b6af39cc3f 1-2
+app/controllers/concerns/localized.rb
+  s_430f5c13c1cbf0::t_28e1e952aa029d 22
+  h_3633b6af39cc3f 23
+app/presenters/concerns/coniverse/dom/enumerable.rb
+  s_430f5c13c1cbf0::t_3c5f180586ac63 6
+  s_430f5c13c1cbf0::t_d2cbd9010ce771 3-5,7
+db/migrate/01_create_coniverse_messages.rb
+  s_430f5c13c1cbf0::t_e373cbcb4a8b44 1-2
+app/presenters/concerns/coniverse/dom.rb
+  s_430f5c13c1cbf0::t_1bc54d4917f73e 3-6
+  h_3633b6af39cc3f 7,51
+spec/spec_helper.rb
+  s_430f5c13c1cbf0::t_2f523877d813fc 11
+app/presenters/coniverse/message_presenter.rb
+  s_430f5c13c1cbf0::t_afad06584218b2 40
+  h_3633b6af39cc3f 16
+app/presenters/page_presenter.rb
+  h_3633b6af39cc3f 28
+Rakefile
+  s_430f5c13c1cbf0::t_b4e8107b2b9d05 9
+  s_430f5c13c1cbf0::t_902772a9012fdc 1
+  h_3633b6af39cc3f 3,5-6,10
+  s_430f5c13c1cbf0::t_8bae6669dc840f 8
+spec/controllers/concerns/pageable.rb
+  h_3633b6af39cc3f 19-21
+  s_430f5c13c1cbf0::t_8a592c5a51573e 30,46
+lib/coniverse/uuid.rb
+  h_3633b6af39cc3f 48
+spec/dummy/app/channels/application_cable/channel.rb
+  h_3633b6af39cc3f 1-2,4-5
+  h_3633b6af39cc3f 4-5
+config/initializers/models/validations.rb
+  s_430f5c13c1cbf0::t_bd030739ed7e3a 14
+  s_430f5c13c1cbf0::t_e6dcf65a4194e3 3
+  h_3633b6af39cc3f 4
+spec/requests/coniverse/actors_spec.rb
+  s_430f5c13c1cbf0::t_88df98a37e94fa 3-6
+app/models/concerns/coniverse/authorable.rb
+  s_430f5c13c1cbf0::t_05d23fd1d44a56 3
+  h_3633b6af39cc3f 4,5
+spec/presenters/concerns/dom.rb
+  s_430f5c13c1cbf0::t_4eba4b83da9a87 26
+  s_430f5c13c1cbf0::t_bc9639785b398a 40
+  s_430f5c13c1cbf0::t_86ab8456354368 12
+app/models/coniverse/conversation.rb
+  s_430f5c13c1cbf0::t_0ebbde0bd73c29 24
+spec/dummy/Rakefile
+  h_3633b6af39cc3f 1-2,6
+lib/tasks/coniverse_tasks.rake
+  s_430f5c13c1cbf0::t_a4fe7661170d18 1-2
+spec/dummy/app/channels/application_cable/connection.rb
+  h_3633b6af39cc3f 1-2,4-5
+  h_3633b6af39cc3f 4-5
+spec/dummy/config.ru
+  h_3633b6af39cc3f 1-2,5
+spec/models/concerns/coniverse/authorable.rb
+  s_430f5c13c1cbf0::t_7915a2a33e8be8 18
+  s_430f5c13c1cbf0::t_a8ba5858da5d3b 17
+  s_430f5c13c1cbf0::t_17e07a2d4180b9 3-6
+spec/presenters/concerns/linkable.rb
+  s_430f5c13c1cbf0::t_f2065932f83ddb 71
+  s_430f5c13c1cbf0::t_500e56e8b16864 55
+app/presenters/concerns/coniverse/flagable.rb
+  h_3633b6af39cc3f 14,37
+app/models/concerns/coniverse/nameable.rb
+  h_3633b6af39cc3f 3
+.rubocop.yml
+  h_3633b6af39cc3f 17-20
+app/models/coniverse/current.rb
+  h_3633b6af39cc3f 4
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "0c5e329af438ac47d7b7e79a0a8315a9d271ee67",
+  "prompts": {},
+  "humans": {
+    "h_3633b6af39cc3f": {
+      "author": "Alexander Senko <Alexander.Senko@gmail.com>"
+    }
+  },
+  "sessions": {
+    "s_430f5c13c1cbf0": {
+      "agent_id": {
+        "tool": "github-copilot-jetbrains",
+        "id": "1793527217560",
+        "model": "unknown"
+      },
+      "human_author": "Alexander Senko <Alexander.Senko@gmail.com>"
+    }
+  }
+}
