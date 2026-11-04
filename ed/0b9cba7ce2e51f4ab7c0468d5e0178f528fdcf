@@ -1,0 +1,14 @@
+config/initializers/loading.rb
+  h_3633b6af39cc3f 4-5,7-9,11-12
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "ed0b9cba7ce2e51f4ab7c0468d5e0178f528fdcf",
+  "prompts": {},
+  "humans": {
+    "h_3633b6af39cc3f": {
+      "author": "Alexander Senko <Alexander.Senko@gmail.com>"
+    }
+  }
+}
