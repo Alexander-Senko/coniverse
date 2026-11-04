@@ -6,8 +6,6 @@ require 'presenters/concerns/linkable'
 
 module Coniverse
 	RSpec.describe ConversationPresenter do
-		subject { decorated }
-
 		let(:attributes)    { { actors: } }
 		let(:actors)        { Actor.limit actors_number }
 		let(:actors_number) { 0 }
@@ -18,7 +16,9 @@ module Coniverse
 			allow_any_instance_of(Actor).to receive :name, &:id
 		end
 
-		it { is_expected.to be_a described_class }
+		describe '.model_class' do
+			its_result { is_expected.to eq Conversation }
+		end
 
 		shared_context :monologue do
 			let(:actors_number) { 1 }

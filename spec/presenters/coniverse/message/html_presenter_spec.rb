@@ -9,6 +9,10 @@ module Coniverse
 		let(:attributes) { { body: } }
 		let(:body)       { '<p>Message body</p>' }
 
+		describe '.model_class' do
+			its_result { is_expected.to eq Message::HTML }
+		end
+
 		it_behaves_like 'DOM builder' do
 			describe '#dom_class' do
 				let(:flags) { decorated.flags }

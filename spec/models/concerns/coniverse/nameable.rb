@@ -12,13 +12,18 @@ module Coniverse
 
 			before { model.update name: }
 
+			# rubocop:disable-next Rails/I18nLocaleAssignment
+			shared_context 'with a different locale' do
+				# HACK: `around { I18n.with_locale :de, &it }` messes with record creation
+				before { I18n.locale = :de }
+				after  { I18n.locale = :en }
+			end
+
 			context 'when localized' do
 				its_result { is_expected.to eq name }
 
-				its_result do
-					I18n.with_locale :de do
-						is_expected.to be_nil
-					end
+				it_behaves_like 'with a different locale' do
+					its_result { is_expected.to be_nil }
 				end
 			end
 
@@ -27,10 +32,8 @@ module Coniverse
 
 				its_result { is_expected.to eq name }
 
-				its_result do
-					I18n.with_locale :de do
-						is_expected.to eq name
-					end
+				it_behaves_like 'with a different locale' do
+					its_result { is_expected.to eq name }
 				end
 
 				context 'with a localized one' do
@@ -40,10 +43,8 @@ module Coniverse
 
 					its_result { is_expected.to eq localized_name }
 
-					its_result do
-						I18n.with_locale :de do
-							is_expected.to eq name
-						end
+					it_behaves_like 'with a different locale' do
+						its_result { is_expected.to eq name }
 					end
 				end
 			end
