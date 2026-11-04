@@ -23,13 +23,13 @@ module Coniverse
 		end
 
 		def message_params
-			params.require(:message).permit(*%i[
+			params.expect message: %i[
 					body
 					lang
 					title
-			], {
+			] << {
 					parent_ids: [],
-			})
+			}
 		end
 	end
 end

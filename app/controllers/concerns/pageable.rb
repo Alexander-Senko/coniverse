@@ -51,9 +51,7 @@ concern :Pageable do
 						ActionController::Parameters.new page: params
 					else
 						raise ArgumentError, "Unexpected parameters: #{params.inspect}"
-					end
-					.require(:page)
-					.permit *%i[
+					end.expect page: %i[
 							size
 							before after
 					]
@@ -112,9 +110,7 @@ concern :Pageable do
 	end
 
 	prepended do
-		include ActiveSupport::Configurable
-
-		config_accessor :page, default: ActiveSupport::OrderedOptions.new,
+		class_attribute :page, default: ActiveSupport::OrderedOptions.new,
 				instance_accessor: false
 
 		pageable_view_paths
@@ -154,7 +150,7 @@ concern :Pageable do
 	memoize def page
 		if :page.in? params
 			Page.new params
-		elsif (defaults = config.page).any?
+		elsif (defaults = self.class.page).any?
 			Page.new defaults
 		end
 	end

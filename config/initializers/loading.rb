@@ -1,6 +1,14 @@
 # frozen_string_literal: true
 
-Rails.application.config.to_prepare do
-	Magic.eager_load :models,
-			engine: Coniverse::Engine
+ActiveSupport.on_load :presentable do
+	class << self
+		include Memery
+
+		memoize def classes(...)
+			Magic.eager_load :models,
+					engine: Coniverse::Engine
+
+			super
+		end
+	end
 end
