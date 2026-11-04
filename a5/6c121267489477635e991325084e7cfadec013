@@ -13,7 +13,7 @@ spec/models/concerns/coniverse/nameable.rb
   s_c2ec1da0cdfbaf::t_7fedbcf22377b1 19
   s_c2ec1da0cdfbaf::t_2a7b12d4c443cd 15
   s_c2ec1da0cdfbaf::t_5cebbb8c3eb41c 35-36
-  h_3633b6af39cc3f 17,21,25
+  h_3633b6af39cc3f 17,21,25,26
   s_c2ec1da0cdfbaf::t_4c242bdc3f3caa 46
   h_3633b6af39cc3f 26
 spec/presenters/coniverse/message/text_presenter_spec.rb
