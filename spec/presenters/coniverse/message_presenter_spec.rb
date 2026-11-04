@@ -7,6 +7,10 @@ require 'presenters/concerns/linkable'
 
 module Coniverse
 	RSpec.describe MessagePresenter do
+		describe '.model_class' do
+			its_result { is_expected.to eq Message }
+		end
+
 		describe '#flat?' do
 			let(:attributes)           { { **super(), messages: } }
 			let(:messageless_messages) { [ Message.new ] * rand(1..2) }

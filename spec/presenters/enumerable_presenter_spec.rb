@@ -9,6 +9,10 @@ RSpec.describe EnumerablePresenter do
 
 	before { model_class.first_or_create! }
 
+	describe '.model_class' do
+		its_result { is_expected.to be_nil }
+	end
+
 	describe '#dom_class' do
 		its_result { is_expected.to match_array %w[ dummy_models ] }
 

@@ -6,16 +6,17 @@ require 'models/concerns/content'
 
 module Coniverse
 	RSpec.describe Conversation do
-		subject { described_class.create! title:, actors: }
+		subject { record }
 
 		cattr_reader(:actors) { 2.times.map { Actor.create! name: "Actor ##{it}" } }
+		let(:record)          { described_class.create! title:, actors: }
 		let(:title)           {}
 
 		it_behaves_like :content
 
 		describe '.between' do
-			its_result(actors)                      { is_expected.to contain_exactly receiver }
-			its_result(actors.first)                { is_expected.to contain_exactly receiver }
+			its_result(actors)                      { is_expected.to contain_exactly record }
+			its_result(actors.first)                { is_expected.to contain_exactly record }
 			its_result(              Actor.create!) { is_expected.to be_empty }
 			its_result(actors.first, Actor.create!) { is_expected.to be_empty }
 		end
