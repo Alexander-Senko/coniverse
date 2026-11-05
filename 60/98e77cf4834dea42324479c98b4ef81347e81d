@@ -78,7 +78,7 @@ spec/presenters/concerns/dom.rb
   s_430f5c13c1cbf0::t_86ab8456354368 12
   s_430f5c13c1cbf0::t_4eba4b83da9a87 26
 app/presenters/concerns/coniverse/flagable.rb
-  h_3633b6af39cc3f 37
+  h_3633b6af39cc3f 14,37
 spec/dummy/Rakefile
   h_3633b6af39cc3f 1-2,6
 app/models/coniverse/message/text.rb
