@@ -1,0 +1,42 @@
+.simplecov
+  s_9a31ea43d274b6::t_4f6511536afce9 3-5
+sig/presenters/concerns/coniverse/dom.rbs
+  s_097c1ad293e419::t_0bd79301d48c0e 11
+sig/presenters/coniverse/message_presenter.rbs
+  s_9a31ea43d274b6::t_83f0787f5e1d00 3
+  s_9a31ea43d274b6::t_0603bd92fe97a2 8
+sig/presenters/concerns/linkable.rbs
+  s_9a31ea43d274b6::t_24066c88901af2 4
+sig/presenters/page_presenter.rbs
+  s_9a31ea43d274b6::t_932e8a7c653c78 2-4
+  s_9a31ea43d274b6::t_f19c9ae60ebc28 11
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "109fc1d562e9ff2b204f5e23c1479488bcae121b",
+  "prompts": {},
+  "humans": {
+    "h_3633b6af39cc3f": {
+      "author": "Alexander Senko <Alexander.Senko@gmail.com>"
+    }
+  },
+  "sessions": {
+    "s_097c1ad293e419": {
+      "agent_id": {
+        "tool": "github-copilot-cli",
+        "id": "425721e1-a1b9-4079-a070-081909d859ec",
+        "model": "unknown"
+      },
+      "human_author": "Alexander Senko <Alexander.Senko@gmail.com>"
+    },
+    "s_9a31ea43d274b6": {
+      "agent_id": {
+        "tool": "github-copilot-jetbrains",
+        "id": "1793886154744",
+        "model": "unknown"
+      },
+      "human_author": "Alexander Senko <Alexander.Senko@gmail.com>"
+    }
+  }
+}
