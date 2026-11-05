@@ -1,0 +1,121 @@
+sig/presenters/concerns/linkable.rbs
+  h_3633b6af39cc3f 1-2,7-11
+  s_1d28522987abc7::t_0b573a7db008b7 6
+  s_1d28522987abc7::t_0a39c5d4c5b329 3-5
+sig/presenters/coniverse/message/html_presenter.rbs
+  h_3633b6af39cc3f 1-6
+sig/presenters/coniverse/message_presenter.rbs
+  h_3633b6af39cc3f 1-7
+  s_1d28522987abc7::t_ac34f50555c15b 13
+  s_1d28522987abc7::t_73c8c08589b2c0 11
+  s_1d28522987abc7::t_d764f805229b4d 8
+  s_1d28522987abc7::t_90a14fc685cf19 12
+  s_1d28522987abc7::t_e449f1d3af9c95 14-15
+  s_1d28522987abc7::t_9e304f6d904bf7 9-10
+sig/coniverse/engine.rbs
+  h_3633b6af39cc3f 1-7
+sig/coniverse/uuid.rbs
+  h_3633b6af39cc3f 1-11
+sig/controllers/concerns/localized.rbs
+  h_3633b6af39cc3f 1-5,7
+  s_1d28522987abc7::t_2df999cf0bd55f 6
+sig/presenters/enumerable_presenter.rbs
+  s_1d28522987abc7::t_df01a4d9f55eb6 7-9
+  s_1d28522987abc7::t_02cf057cecd296 10
+  s_1d28522987abc7::t_8c615ae130435c 11
+  h_3633b6af39cc3f 1-6
+sig/controllers/concerns/coniverse/actors.rbs
+  h_3633b6af39cc3f 1-9
+sig/models/coniverse/message.rbs
+  h_3633b6af39cc3f 1-14
+sig/helpers/coniverse/application_helper.rbs
+  h_3633b6af39cc3f 1-7
+sig/presenters/coniverse/message/text_presenter.rbs
+  h_3633b6af39cc3f 1-6
+sig/models/coniverse/actor.rbs
+  h_3633b6af39cc3f 1-8
+spec/spec_helper.rb
+  h_3633b6af39cc3f 14
+sig/presenters/active_support/time_with_zone_presenter.rbs
+  h_3633b6af39cc3f 1-2,4-8
+  s_1d28522987abc7::t_b9ad6d03d6d4b3 3
+sig/presenters/concerns/coniverse/dom/enumerable.rbs
+  s_1d28522987abc7::t_49793f9c648057 1-3
+  s_1d28522987abc7::t_9a7d530da8e3fb 4
+  s_1d28522987abc7::t_ff0aa33eb2e01c 5-7
+sig/models/concerns/localizable.rbs
+  h_3633b6af39cc3f 1-19
+sig/models/concerns/coniverse/authorable.rbs
+  h_3633b6af39cc3f 1-15
+sig/models/concerns/coniverse/nameable.rbs
+  h_3633b6af39cc3f 1-15
+sig/models/coniverse/message/text.rbs
+  h_3633b6af39cc3f 1-9
+sig/presenters/concerns/coniverse/dom.rbs
+  h_3633b6af39cc3f 8-10,12-17
+  s_1d28522987abc7::t_d579e458cd2340 11
+  s_1d28522987abc7::t_410ccf2560d206 4
+  s_1d28522987abc7::t_4dc71950d27bae 7
+  s_1d28522987abc7::t_49c5f4ff1ae6d7 5-6
+  s_1d28522987abc7::t_1c6923b59bda0e 1-3
+sig/models/coniverse/conversation.rbs
+  h_3633b6af39cc3f 1-10
+sig/models/coniverse/application_record.rbs
+  h_3633b6af39cc3f 1-4
+coniverse.gemspec
+  h_3633b6af39cc3f 22
+sig/presenters/concerns/coniverse/flagable.rbs
+  s_1d28522987abc7::t_a82e7e871611af 1-3
+  s_1d28522987abc7::t_3dc6941deaff90 4
+  s_1d28522987abc7::t_d353c33578c062 5-7
+  s_1d28522987abc7::t_1a450269bddb1c 9-10
+  s_1d28522987abc7::t_17797072b7c584 8
+sig/presenters/coniverse/actor_presenter.rbs
+  h_3633b6af39cc3f 1-4
+sig/presenters/coniverse/application_presenter.rbs
+  h_3633b6af39cc3f 1-7
+sig/presenters/page_presenter.rbs
+  h_3633b6af39cc3f 1-10
+  s_1d28522987abc7::t_07efbca951987b 11
+  s_1d28522987abc7::t_8f9bd66f9ac827 12
+sig/presenters/coniverse/conversation_presenter.rbs
+  h_3633b6af39cc3f 1-4
+sig/models/coniverse/message/html.rbs
+  h_3633b6af39cc3f 1-6
+spec/presenters/coniverse/message_presenter_spec.rb
+  h_3633b6af39cc3f 72
+spec/presenters/coniverse/message/html_presenter_spec.rb
+  h_3633b6af39cc3f 16
+spec/presenters/coniverse/actor_presenter_spec.rb
+  h_3633b6af39cc3f 13
+app/presenters/concerns/coniverse/flagable.rb
+  h_3633b6af39cc3f 9,10,12-13,17,18-19,21-26
+  h_3633b6af39cc3f 10,12-13,18-19,21-26
+spec/presenters/coniverse/message/text_presenter_spec.rb
+  h_3633b6af39cc3f 16
+spec/presenters/coniverse/conversation_presenter_spec.rb
+  s_1d28522987abc7::t_151b7452d34d3a 38
+app/presenters/coniverse/conversation_presenter.rb
+  h_3633b6af39cc3f 5-6,8-13
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "63aafdf6de2c78b6a27e03fa149a3c3a368a63e4",
+  "prompts": {},
+  "humans": {
+    "h_3633b6af39cc3f": {
+      "author": "Alexander Senko <Alexander.Senko@gmail.com>"
+    }
+  },
+  "sessions": {
+    "s_1d28522987abc7": {
+      "agent_id": {
+        "tool": "github-copilot-jetbrains",
+        "id": "1793709766208",
+        "model": "unknown"
+      },
+      "human_author": null
+    }
+  }
+}
