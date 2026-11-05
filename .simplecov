@@ -1,5 +1,8 @@
 # frozen_string_literal: true
 
+# Specs run in separate processes (see Rakefile); results are merged.
+SimpleCov.command_name [ 'rspec', *ENV['SPEC_GROUP'] ] * ':'
+
 SimpleCov.configure do
 	enable_coverage :branch
 	enable_coverage :eval
