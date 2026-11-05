@@ -1,0 +1,14 @@
+app/presenters/concerns/coniverse/flagable.rb
+  h_3633b6af39cc3f 20
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "8228627f1b4c77e51fde7fe14daf6ba6bbea4af1",
+  "prompts": {},
+  "humans": {
+    "h_3633b6af39cc3f": {
+      "author": "Alexander Senko <Alexander.Senko@gmail.com>"
+    }
+  }
+}
