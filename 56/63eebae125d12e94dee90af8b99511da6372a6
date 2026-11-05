@@ -1,0 +1,14 @@
+sig/presenters/concerns/coniverse/dom.rbs
+  h_3633b6af39cc3f 11
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "5663eebae125d12e94dee90af8b99511da6372a6",
+  "prompts": {},
+  "humans": {
+    "h_3633b6af39cc3f": {
+      "author": "Alexander Senko <Alexander.Senko@gmail.com>"
+    }
+  }
+}
