@@ -6,6 +6,9 @@
 # this file to always be loaded, without a need to explicitly require it in any
 # files.
 
+require 'simplecov'
+SimpleCov.start # see .simplecov
+
 require 'active_support/core_ext/string/inflections'
 
 # rubocop:disable-next Style/TrailingCommaInArguments
