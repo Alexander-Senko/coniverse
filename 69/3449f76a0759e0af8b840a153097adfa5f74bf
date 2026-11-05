@@ -1,0 +1,29 @@
+sig/presenters/concerns/linkable.rbs
+  s_9a31ea43d274b6::t_b31331787da2dd 4
+sig/presenters/concerns/coniverse/dom.rbs
+  h_3633b6af39cc3f 11
+sig/presenters/page_presenter.rbs
+  h_3633b6af39cc3f 2-4
+  s_9a31ea43d274b6::t_44bd43e7a9a9bf 11
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "693449f76a0759e0af8b840a153097adfa5f74bf",
+  "prompts": {},
+  "humans": {
+    "h_3633b6af39cc3f": {
+      "author": "Alexander Senko <Alexander.Senko@gmail.com>"
+    }
+  },
+  "sessions": {
+    "s_9a31ea43d274b6": {
+      "agent_id": {
+        "tool": "github-copilot-jetbrains",
+        "id": "1793886154744",
+        "model": "unknown"
+      },
+      "human_author": "Alexander Senko <Alexander.Senko@gmail.com>"
+    }
+  }
+}
