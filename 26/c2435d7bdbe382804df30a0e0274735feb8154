@@ -1,0 +1,19 @@
+.simplecov
+  s_9a31ea43d274b6::t_4f6511536afce9 3-5
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "26c2435d7bdbe382804df30a0e0274735feb8154",
+  "prompts": {},
+  "sessions": {
+    "s_9a31ea43d274b6": {
+      "agent_id": {
+        "tool": "github-copilot-jetbrains",
+        "id": "1793886154744",
+        "model": "unknown"
+      },
+      "human_author": "Alexander Senko <Alexander.Senko@gmail.com>"
+    }
+  }
+}
