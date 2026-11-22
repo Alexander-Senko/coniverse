@@ -1,0 +1,24 @@
+coniverse.gemspec
+  s_e0fd20a8ee2d26::t_8ab09f707d6ae6 27
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "fc37d64b3ef0823927c12cfd4cff2f149599f240",
+  "prompts": {},
+  "humans": {
+    "h_3633b6af39cc3f": {
+      "author": "Alexander Senko <Alexander.Senko@gmail.com>"
+    }
+  },
+  "sessions": {
+    "s_e0fd20a8ee2d26": {
+      "agent_id": {
+        "tool": "github-copilot-jetbrains",
+        "id": "1795185484663",
+        "model": "unknown"
+      },
+      "human_author": "Alexander Senko <Alexander.Senko@gmail.com>"
+    }
+  }
+}
