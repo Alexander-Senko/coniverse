@@ -19,7 +19,7 @@ db/migrate/01_create_coniverse_messages.rb
   s_430f5c13c1cbf0::t_e373cbcb4a8b44 1-2
 Rakefile
   s_430f5c13c1cbf0::t_902772a9012fdc 1
-  h_3633b6af39cc3f 3,5-6,8
+  h_3633b6af39cc3f 3,5-6,8,9-10
   h_3633b6af39cc3f 9-10
 app/models/concerns/coniverse/authorable.rb
   s_430f5c13c1cbf0::t_05d23fd1d44a56 3

@@ -6,7 +6,7 @@ coniverse.gemspec
 app/controllers/coniverse/messages_controller.rb
   h_3633b6af39cc3f 26,30,32
 config/initializers/loading.rb
-  h_3633b6af39cc3f 6,10,13
+  h_3633b6af39cc3f 4-5,6,7-9,10,11-12,13
   s_c2ec1da0cdfbaf::t_baa0a030c60450 3
   h_3633b6af39cc3f 4-5,7-9,11-12
 ---
