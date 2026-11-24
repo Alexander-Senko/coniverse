@@ -1,0 +1,35 @@
+README.md
+  s_e0fd20a8ee2d26::t_3e671e78bfd07e 5
+  s_e0fd20a8ee2d26::t_018e38a81b1db1 52-54
+  s_e0fd20a8ee2d26::t_1af2dcd0797ecb 1,7-15,17,19-21,23,26,29-38
+  s_e0fd20a8ee2d26::t_c4cfd05fa1fa5a 18
+  s_e0fd20a8ee2d26::t_f4587eda403603 2
+  h_3633b6af39cc3f 6,28,42
+  s_e0fd20a8ee2d26::t_7dca03e757b5a0 16
+  s_e0fd20a8ee2d26::t_0de9d5ca059547 24
+  s_e0fd20a8ee2d26::t_43c812a997fe53 4
+  s_e0fd20a8ee2d26::t_aa0cdb2dff04cd 22
+  s_e0fd20a8ee2d26::t_48a651f785d28d 25
+  h_3633b6af39cc3f 27
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "0c906bf02c207bb768594febd1027fbb62155f9b",
+  "prompts": {},
+  "humans": {
+    "h_3633b6af39cc3f": {
+      "author": "Alexander Senko <Alexander.Senko@gmail.com>"
+    }
+  },
+  "sessions": {
+    "s_e0fd20a8ee2d26": {
+      "agent_id": {
+        "tool": "github-copilot-jetbrains",
+        "id": "1795185484663",
+        "model": "unknown"
+      },
+      "human_author": "Alexander Senko <Alexander.Senko@gmail.com>"
+    }
+  }
+}
